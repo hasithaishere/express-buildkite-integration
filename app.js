@@ -9,6 +9,8 @@ const usersRouter = require('./routes/users');
 
 const appServer = express();
 
+appServer.disable("x-powered-by");
+
 // view engine setup
 appServer.set('views', path.join(__dirname, 'views'));
 appServer.set('view engine', 'ejs');
