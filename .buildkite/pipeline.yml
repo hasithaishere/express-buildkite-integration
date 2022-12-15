@@ -1,0 +1,19 @@
+steps:
+  - command: "ls"
+    label: "List Files"
+
+  - command: "CURRENT_GIT_HASH=$(git log --pretty=format:'%h' -n 1)\necho \\$CURRENT_GIT_HASH"
+    label: "Get Diff"
+    
+  - block: ":rocket: Continue Cloufrmation Execution"
+    fields:
+      - select: "Please check below choice and continue"
+        key: "cf-execution-state"
+        options:
+          - label: "Confirm and continue with execution"
+            value: "yes"
+          - label: "Stop Execution"
+            value: "no"
+    
+  - command: "echo $(buildkite-agent meta-data get \"cf-execution-state\")"
+    label: "Show Output"
