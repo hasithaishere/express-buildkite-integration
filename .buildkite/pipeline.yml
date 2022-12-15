@@ -1,6 +1,8 @@
 steps:
   - command: "ls"
     label: "List Files"
+    
+  - command: ".buildkite/scripts/generate-changeset.sh"
 
   - command: "CURRENT_GIT_HASH=$(git log --pretty=format:'%h' -n 1)\necho \\$CURRENT_GIT_HASH"
     label: "Get Diff"
