@@ -3,9 +3,7 @@ steps:
     label: "List Files"
     
   - command: ".buildkite/scripts/generate-changeset.sh"
-
-  - command: "CURRENT_GIT_HASH=$(git log --pretty=format:'%h' -n 1)\necho \\$CURRENT_GIT_HASH"
-    label: "Get Diff"
+    label: "Preview Changeset"
     
   - block: ":rocket: Continue Cloufrmation Execution"
     fields:
@@ -17,7 +15,5 @@ steps:
           - label: "Stop Execution"
             value: "no"
     
-  - command: "echo $(buildkite-agent meta-data get \"cf-execution-state\")"
-    label: "Show Output"
-    
   - command: ".buildkite/scripts/execute-changeset.sh"
+    label: "Execute Changeset"
