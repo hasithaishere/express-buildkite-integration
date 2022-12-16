@@ -6,7 +6,7 @@ CS_ARN=$(buildkite-agent meta-data get "${SERVICE_NAME}-cs-arn")
 #echo $CS_ARN
 
 if [ "$EXECUTION_STATUS" = "yes" ]; then
-  echo "It's Yes"
+  aws cloudformation execute-change-set --change-set-name $CS_ARN
 else
   echo "User abort the chnages set execution"
   exit 0
