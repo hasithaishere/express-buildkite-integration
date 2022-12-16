@@ -19,3 +19,5 @@ steps:
     
   - command: "echo $(buildkite-agent meta-data get \"cf-execution-state\")"
     label: "Show Output"
+    
+  - command: ".buildkite/scripts/execute-changeset.sh"
