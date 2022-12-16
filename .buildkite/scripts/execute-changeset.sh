@@ -7,7 +7,7 @@ echo $CS_ARN
 
 if [ "$EXECUTION_STATUS" = "yes" ]; then
   echo "It's Yes"
-then
+else
   echo "User abort the chnages set execution"
   exit 0
 fi
