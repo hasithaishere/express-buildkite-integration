@@ -2,8 +2,8 @@
 SERVICE_NAME="sample-integration-service"
 EXECUTION_STATUS=$(buildkite-agent meta-data get "cf-execution-state")
 CS_ARN=$(buildkite-agent meta-data get "${SERVICE_NAME}-cs-arn")
-echo $EXECUTION_STATUS
-echo $CS_ARN
+#echo $EXECUTION_STATUS
+#echo $CS_ARN
 
 if [ "$EXECUTION_STATUS" = "yes" ]; then
   echo "It's Yes"
