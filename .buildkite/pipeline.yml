@@ -1,7 +1,4 @@
 steps:
-  - command: "ls"
-    label: "List Files"
-    
   - command: ".buildkite/scripts/generate-changeset.sh"
     label: "Preview Changeset"
     
