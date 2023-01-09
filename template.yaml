@@ -3,7 +3,7 @@ Description: "Infrastructure for enabling S3 bucket access-logs"
 
 Metadata:
   StackPostfix: s3-log-glue-resources
-  StackRrgion: ap-southeast-1
+  StackRegion: ap-southeast-1
   UUID: 8b9b8035-004f-4d8d-bf8d-7b8d1878a40d
 
 Parameters:
