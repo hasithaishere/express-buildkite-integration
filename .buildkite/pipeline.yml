@@ -1,6 +1,3 @@
 steps:
   - command: "bie init -e staging -r us-west-2 -b $BUILDKITE_BUILD_NUMBER | buildkite-agent pipeline upload"
     label: "Initilize Pipeleine"
-    
-  - command: ".buildkite/scripts/generate-changeset.sh"
-    label: "Preview Changeset"
