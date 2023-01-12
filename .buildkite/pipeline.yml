@@ -1,4 +1,7 @@
 steps:
+  - command: "bie help"
+    label: "Test Bie Help"
+    
   - command: ".buildkite/scripts/generate-changeset.sh"
     label: "Preview Changeset"
     
