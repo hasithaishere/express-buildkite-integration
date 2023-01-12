@@ -1,5 +1,5 @@
 steps:
-  - command: ".buildkite/pipeline.sh | bie init -e staging -r us-west-2"
+  - command: "bie init -e staging -r us-west-2 | buildkite-agent pipeline upload"
     label: "Test Bie Help"
     
   - command: ".buildkite/scripts/generate-changeset.sh"
