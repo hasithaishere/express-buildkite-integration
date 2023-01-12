@@ -1,4 +1,7 @@
 steps:
+  - command: "bie init -e staging -r us-west-2 > temp.yml && cat temp.yml"
+    label: "print"
+
   - command: "bie init -e staging -r us-west-2 | buildkite-agent pipeline upload"
     label: "Test Bie init"
     
