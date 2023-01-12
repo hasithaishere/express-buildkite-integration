@@ -4,16 +4,3 @@ steps:
     
   - command: ".buildkite/scripts/generate-changeset.sh"
     label: "Preview Changeset"
-    
-  - block: ":rocket: Continue Cloufrmation Execution"
-    fields:
-      - select: "Please check below choice and continue"
-        key: "cf-execution-state"
-        options:
-          - label: "Confirm and continue with execution"
-            value: "yes"
-          - label: "Stop Execution"
-            value: "no"
-    
-  - command: ".buildkite/scripts/execute-changeset.sh"
-    label: "Execute Changeset"
