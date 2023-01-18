@@ -54,7 +54,6 @@ Resources:
               - s3:GetObject
               - s3:ListBucket
               - s3:ListBucketMultipartUploads
-              - s3:AbortMultipartUpload
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
