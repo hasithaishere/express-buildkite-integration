@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for log handling.."
+Description: "Infrastructure for log handling...."
 
 Metadata:
   Entity: infra/media-service
@@ -56,7 +56,6 @@ Resources:
               - s3:ListBucketMultipartUploads
               - s3:AbortMultipartUpload
               - s3:PutObject
-              - s3:ListMultipartUploadParts
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
