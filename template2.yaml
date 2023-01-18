@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for enabling S3 bucket access-logs"
+Description: "Infrastructure for log handling"
 
 Metadata:
   Entity: infra/s3-access-logs
