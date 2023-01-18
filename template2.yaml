@@ -15,7 +15,7 @@ Parameters:
       - "production"
   LogBucketName:
     Type: String
-    Default: "respond-io-main-bucket-access-logs"
+    Default: "main-bucket-access-logs"
   LogPath:
     Type: String
     Default: "access-logs"
