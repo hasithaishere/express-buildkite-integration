@@ -1,5 +1,6 @@
 steps:
   - label: "Initialize IaC Deployment"
+    command: "ls"
     env:
         BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
     plugins:
