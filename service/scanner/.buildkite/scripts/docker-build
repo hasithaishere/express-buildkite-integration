@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+echo "--- Building $ENV :docker: containers..."
+

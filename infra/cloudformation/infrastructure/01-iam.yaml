@@ -1,11 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for log handling...."
-
-Metadata:
-  Entity: infra/media-service
-  StackPostfix: media-service
-  StackRegion: ap-southeast-1
-  UUID: 8b9b8035-004f-4d8d-bf8d-7b8d1878a40d
+Description: "Infrastructure for base AWS config"
 
 Parameters:
   Environment:
@@ -21,7 +15,7 @@ Parameters:
     Default: "access-logs"
 
 Resources:
-  MediaServiceFunctionRole:
+  BaseRole:
     Type: AWS::IAM::Role
     Properties:
       RoleName: !Sub "${Environment}--iam-resources"
@@ -37,13 +31,13 @@ Resources:
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
         - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
-        - !Ref MediaServiceManagedPolicy
+        - !Ref BaseManagedPolicy
 
-  MediaServiceManagedPolicy:
+  BaseManagedPolicy:
     Type: AWS::IAM::ManagedPolicy
     Properties:
-      Description: "Rescan Initializer Policy"
-      ManagedPolicyName: !Sub "${Environment}--media-service-policy"
+      Description: "Base Policy"
+      ManagedPolicyName: !Sub "${Environment}--Base-policy"
       Path: /
       PolicyDocument:
         Version: "2012-10-17"

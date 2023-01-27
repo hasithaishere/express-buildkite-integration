@@ -1,0 +1,7 @@
+steps:
+  - label: "Build"
+    command: "service/scanner/.buildkite/scripts/docker-build"
+    key: "scanner-build"
+  - label: "Deploy"
+    command: "service/scanner/.buildkite/scripts/deploy"
+    depends_on: "scanner-build"

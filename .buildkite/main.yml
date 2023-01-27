@@ -1,0 +1,27 @@
+steps:
+  - label: "Triggering pipelines"
+    plugins:
+      - chronotc/monorepo-diff#v2.0.4:
+          diff: ".buildkite/scripts/diff"
+          interpolation: false
+          watch:
+            # ========================== Pipeline for ECS ==========================
+            - path:
+                - "service/scanner/"
+              config:
+                command: "buildkite-agent pipeline upload service/scanner/.buildkite/pipeline.yml"
+                label: "Scanner API"
+            # ========================== Pipeline for Lambdas ==========================
+            - path:
+                - "service/lambda/notify/"
+              config:
+                command: "buildkite-agent pipeline upload service/lambda/notify/.buildkite/pipeline.yml"
+                label: "Lambda - Notify"
+            # ========================== Pipeline for Infrastructure ==========================
+            # TODO: Need to add"
+  - wait
+
+  # Tagging build last commit for diffing purpose
+  - label: "Tag Build"
+    if:  build.branch == 'main'
+    command: "echo $(git rev-parse HEAD) > ~/last_successful_production_build"

@@ -1,0 +1,3 @@
+steps:
+  - label: "Deploy"
+    command: "service/lambda/notify/.buildkite/scripts/deploy"
