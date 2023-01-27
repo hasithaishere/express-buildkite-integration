@@ -11,4 +11,3 @@ steps:
           path: 'service/lambda/notify'
   - label: "Deploy"
     command: "service/lambda/notify/.buildkite/scripts/deploy"
-#    command: "service/lambda/notify/.buildkite/scripts/deploy"
