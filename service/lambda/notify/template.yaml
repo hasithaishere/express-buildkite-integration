@@ -10,6 +10,18 @@ Globals:
   Function:
     Timeout: 3
     MemorySize: 128
+    
+Parameters:
+  Environment:
+    Type: String
+    Default: local
+    AllowedValues:
+      - "local"
+      - "staging"
+      - "production"
+  ResultBucketName:
+    Type: String
+    Default: "results-bucket"
 
 Resources:
   HelloWorldFunction:
