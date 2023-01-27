@@ -3,7 +3,7 @@ steps:
     env:
         BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
     plugins:
-      - hasithaishere/buildkite-file-counter#v1.0.13:
+      - hasithaishere/buildkite-file-counter#v1.0.14:
           type: 'lambda'
           name: 'MS Notify'
           stack: 'ms-notify'
