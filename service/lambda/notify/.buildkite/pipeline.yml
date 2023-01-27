@@ -1,3 +1,4 @@
 steps:
   - label: "Deploy"
-    command: "service/lambda/notify/.buildkite/scripts/deploy"
+    command: "pwd && service/lambda/notify/.buildkite/scripts/deploy"
+#    command: "service/lambda/notify/.buildkite/scripts/deploy"
