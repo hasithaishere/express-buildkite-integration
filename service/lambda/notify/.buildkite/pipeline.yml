@@ -4,9 +4,9 @@ steps:
     env:
         BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
     plugins:
-      - hasithaishere/buildkite-file-counter#v1.1.11:
+      - hasithaishere/buildkite-file-counter#v1.1.12:
           type: 'lambda'
-          name: 'MS-Notify'
+          name: 'MS Notify'
           stack: 'ms-notify'
           path: 'service/lambda/notify'
   - label: "Deploy"
