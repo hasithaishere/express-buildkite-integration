@@ -6,7 +6,7 @@ steps:
     plugins:
       - hasithaishere/buildkite-file-counter#v1.1.11:
           type: 'lambda'
-          name: 'MS Notify'
+          name: 'MS-Notify'
           stack: 'ms-notify'
           path: 'service/lambda/notify'
   - label: "Deploy"
