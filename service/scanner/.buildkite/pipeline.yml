@@ -1,4 +1,14 @@
 steps:
+  - label: "Initialize IaC Deployment"
+    command: "ls"
+    env:
+        BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
+    plugins:
+      - hasithaishere/buildkite-file-counter#v1.1.13:
+          type: 'lambda'
+          name: 'MS-Scanner'
+          stack: 'ms-scanner'
+          path: 'service/scanner/template.yaml'
   - label: "Build"
     command: "service/scanner/.buildkite/scripts/docker-build"
     key: "scanner-build"
