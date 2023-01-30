@@ -5,7 +5,7 @@ steps:
         BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
     plugins:
       - hasithaishere/buildkite-file-counter#v1.1.13:
-          type: 'service'
+          type: 'ecs'
           name: 'MS-Scanner'
           stack: 'ms-scanner'
           path: 'service/scanner/template.yaml'
