@@ -49,7 +49,6 @@ Resources:
               - s3:ListBucket
               - s3:PutObject
               - s3:PutObjectAcl
-              - s3:GetObjectAcl
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
