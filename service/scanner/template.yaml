@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for log handling."
+Description: "Infrastructure for log handling....."
 
 Parameters:
   Environment:
