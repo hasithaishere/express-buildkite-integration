@@ -3,7 +3,7 @@ steps:
     command: "ls"
     key: "iac"
     plugins:
-      - hasithaishere/buildkite-file-counter#v1.2.0:
+      - respond-io/iac-executor-buildkite-plugin#v0.1.0:
           type: 'ecs'
           name: 'MS-Scanner'
           stack: 'ms-scanner'
