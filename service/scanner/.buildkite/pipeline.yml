@@ -3,7 +3,7 @@ steps:
     command: "ls"
     key: "ms-scanner-iac"
     plugins:
-      - respond-io/iac-executor#v0.1.2:
+      - respond-io/iac-executor#v0.1.3:
           type: 'ecs'
           name: 'MS-Scanner'
           stack: 'ms-scanner'
