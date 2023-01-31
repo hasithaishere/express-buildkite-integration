@@ -1,6 +1,11 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "Infrastructure for base AWS config"
 
+Metadata:
+  Name: "Infra-IAM"
+  StagingStackName: "staging--iam-resources"
+  ProductionStackName: "production--iam-resources"
+
 Parameters:
   Environment:
     Type: String

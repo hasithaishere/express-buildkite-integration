@@ -1,6 +1,11 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "Infrastructure for log handling.."
 
+Metadata:
+  Name: "MS-Scanner"
+  StagingStackName: "staging--ms-scanner"
+  ProductionStackName: "production--ms-scanner"
+
 Parameters:
   Environment:
     Type: String
