@@ -1,9 +1,9 @@
 steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
-    key: "iac"
+    key: "ms-scanner-iac"
     plugins:
-      - respond-io/iac-executor#v0.1.0:
+      - respond-io/iac-executor#v0.1.1:
           type: 'ecs'
           name: 'MS-Scanner'
           stack: 'ms-scanner'
@@ -11,7 +11,7 @@ steps:
   - label: "Build"
     command: "service/scanner/.buildkite/scripts/docker-build"
     key: "scanner-build"
-    depends_on: "iac"
+    depends_on: "ms-scanner-iac"
   - label: "Deploy"
     command: "service/scanner/.buildkite/scripts/deploy"
     depends_on: "scanner-build"

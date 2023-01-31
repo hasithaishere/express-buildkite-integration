@@ -1,13 +1,13 @@
 steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
-    key: "iac"
+    key: "ms-notify-iac"
     plugins:
-      - respond-io/iac-executor#v0.1.0:
+      - respond-io/iac-executor#v0.1.1:
           type: 'lambda'
           name: 'MS-Notify'
           stack: 'ms-notify'
           path: 'service/lambda/notify/template.yaml'
   - label: "Deploy"
     command: "service/lambda/notify/.buildkite/scripts/deploy"
-    depends_on: "iac"
+    depends_on: "ms-notify-iac"
