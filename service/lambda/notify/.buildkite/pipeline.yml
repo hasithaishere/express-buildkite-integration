@@ -1,13 +1,15 @@
 steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
+    key: "iac"
     env:
         BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
     plugins:
-      - hasithaishere/buildkite-file-counter#v1.1.13:
+      - hasithaishere/buildkite-file-counter#v1.2.0:
           type: 'lambda'
           name: 'MS-Notify'
           stack: 'ms-notify'
-          path: 'service/lambda/notify'
+          path: 'service/lambda/notify/template.yaml'
   - label: "Deploy"
     command: "service/lambda/notify/.buildkite/scripts/deploy"
+    depends_on: "iac"
