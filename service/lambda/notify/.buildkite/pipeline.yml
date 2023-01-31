@@ -3,7 +3,7 @@ steps:
     command: "ls"
     key: "iac"
     plugins:
-      - respond-io/iac-executor-buildkite-plugin#v0.1.0:
+      - respond-io/iac-executor#v0.1.0:
           type: 'lambda'
           name: 'MS-Notify'
           stack: 'ms-notify'
