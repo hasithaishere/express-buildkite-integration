@@ -3,7 +3,7 @@ steps:
     command: "ls"
     key: "ms-notify-iac"
     plugins:
-      - respond-io/iac-executor#v0.1.1:
+      - respond-io/iac-executor#v0.1.2:
           type: 'lambda'
           name: 'MS-Notify'
           stack: 'ms-notify'
