@@ -12,7 +12,6 @@ Globals:
     MemorySize: 128
 
 Metadata:
-  Name: "MS-Notify-Lambda"
   StagingStackName: "staging--ms-notify-lambda"
   ProductionStackName: "production--ms-notify-lambda"
     
@@ -43,7 +42,7 @@ Resources:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /hello-api-v8
+            Path: /hello-api-v9
             Method: get
 
 Outputs:
