@@ -19,7 +19,7 @@ steps:
                 label: "Lambda - Notify"
             # ========================== Pipeline for Infrastructure ==========================
             - path:
-                - "infra/cloudformation"
+                - "infra/cloudformation/"
               config:
                 command: "buildkite-agent pipeline upload infra/cloudformation/.buildkite/pipeline.yml"
                 label: "Base Infrastructure"

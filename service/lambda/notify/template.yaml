@@ -12,6 +12,7 @@ Globals:
     MemorySize: 128
 
 Metadata:
+  Name: "MS-Notify-Lambda"
   StagingStackName: "staging--ms-notify-lambda"
   ProductionStackName: "production--ms-notify-lambda"
     
