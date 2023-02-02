@@ -3,10 +3,9 @@ steps:
     command: "ls"
     key: "ms-notify-iac"
     plugins:
-      - respond-io/iac-executor#v0.1.3:
+      - respond-io/iac-executor#v0.1.4:
           type: 'lambda'
           name: 'MS-Notify'
-          stack: 'ms-notify'
           path: 'service/lambda/notify/template.yaml'
   - label: "Deploy"
     command: "service/lambda/notify/.buildkite/scripts/deploy"
