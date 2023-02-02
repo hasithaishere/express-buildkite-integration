@@ -27,6 +27,8 @@ Parameters:
   ResultBucketName:
     Type: String
     Default: "results-bucket"
+  SecondaryBucketName:
+    Type: String
 
 Resources:
   HelloWorldFunction:
