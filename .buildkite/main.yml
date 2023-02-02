@@ -18,7 +18,11 @@ steps:
                 command: "buildkite-agent pipeline upload service/lambda/notify/.buildkite/pipeline.yml"
                 label: "Lambda - Notify"
             # ========================== Pipeline for Infrastructure ==========================
-            # TODO: Need to add"
+            - path:
+                - "infra/cloudformation"
+              config:
+                command: "buildkite-agent pipeline upload infra/cloudformation/.buildkite/pipeline.yml"
+                label: "Base Infrastructure"
   - wait
 
   # Tagging build last commit for diffing purpose
