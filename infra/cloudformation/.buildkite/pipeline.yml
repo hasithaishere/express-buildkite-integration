@@ -2,6 +2,6 @@ steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
     plugins:
-      - respond-io/iac-executor#v0.1.4:
+      - respond-io/iac-executor#v0.1.5:
           type: 'infrastructure'
           path: 'infra/cloudformation/'
