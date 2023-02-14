@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Deploying the Lambda using SAM
+#  The samconfig.toml should be configured with confirm_changset = false
+
+echo "--- POST CHEKOUT ..."
+
+#export AWS_PROFILE=sam
+
+pwd
+
+cd service/lambda/notify
+
+ls
+
+npm i
+
+#sam deploy --no-fail-on-empty-changeset
