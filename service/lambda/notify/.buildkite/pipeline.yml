@@ -1,6 +1,6 @@
 steps:
   - label: "Initialize IaC Deployment"
-    command: "ls"
+    command: "service/lambda/notify/.buildkite/scripts/post-checkout"
     key: "ms-notify-iac"
     plugins:
       - respond-io/iac-executor#v0.2.11:
