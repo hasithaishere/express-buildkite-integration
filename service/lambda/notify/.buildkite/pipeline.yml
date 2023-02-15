@@ -7,3 +7,4 @@ steps:
           type: 'lambda'
           name: 'MS-Notify'
           path: 'service/lambda/notify/template.yaml'
+          pre-command: 'service/lambda/notify/.buildkite/hooks/post-checkout'
