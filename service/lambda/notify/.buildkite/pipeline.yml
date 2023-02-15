@@ -7,4 +7,4 @@ steps:
           type: 'lambda'
           name: 'MS-Notify'
           path: 'service/lambda/notify/template.yaml'
-          command: 'service/lambda/notify/.buildkite/hooks/post-checkout'
+          command: 'pwd && cd service/lambda/notify && ./npm-install.sh && cd "${BUILDKITE_BUILD_CHECKOUT_PATH}" && pwd'
