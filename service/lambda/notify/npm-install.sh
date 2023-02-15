@@ -1,1 +1,1 @@
-npm install --production --no-audit
+npm install --production

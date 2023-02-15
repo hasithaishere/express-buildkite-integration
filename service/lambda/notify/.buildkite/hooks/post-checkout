@@ -13,6 +13,6 @@ cd service/lambda/notify
 
 ls
 
-npm i
+./npm-install.sh
 
 #sam deploy --no-fail-on-empty-changeset
