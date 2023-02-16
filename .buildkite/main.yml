@@ -10,19 +10,19 @@ steps:
                 - "service/scanner/"
               config:
                 command: "buildkite-agent pipeline upload service/scanner/.buildkite/pipeline.yml"
-                label: "Scanner API"
+                label: ":amazon-ecs: Scanner API"
             # ========================== Pipeline for Lambdas ==========================
             - path:
                 - "service/lambda/notify/"
               config:
                 command: "buildkite-agent pipeline upload service/lambda/notify/.buildkite/pipeline.yml"
-                label: "Lambda - Notify"
+                label: ":aws-lambda: Lambda - Notify"
             # ========================== Pipeline for Infrastructure ==========================
             - path:
                 - "infra/cloudformation/"
               config:
                 command: "buildkite-agent pipeline upload infra/cloudformation/.buildkite/pipeline.yml"
-                label: "Base Infrastructure"
+                label: ":building_construction: Base Infrastructure"
   - wait
 
   # Tagging build last commit for diffing purpose
