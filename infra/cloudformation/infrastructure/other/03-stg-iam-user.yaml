@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "Infrastructure for base AWS config.."
 
 Metadata:
-  Name: "Infra-IAM-User-Stg"
+  Name: "IAM-User-3"
   StagingStackName: "staging--iam-resources-user-03"
 
 Parameters:
