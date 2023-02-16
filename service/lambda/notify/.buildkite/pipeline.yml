@@ -1,10 +1,12 @@
 steps:
-  - label: "Initialize IaC Deployment"
-    command: "ls"
-    key: "ms-notify-iac"
-    plugins:
-      - respond-io/iac-executor#v0.3.0:
-          type: 'lambda'
-          name: 'MS-Notify'
-          path: 'service/lambda/notify/template.yaml'
-          command: 'cd service/lambda/notify && ./npm-install.sh'
+  - group: ":aws-lambda: MS Notify Lambda"
+    key: "ms-notify-lambda-group"
+    steps:
+      - label: "Initialize IaC Deployment"
+        command: "ls"
+        plugins:
+          - respond-io/iac-executor#v0.3.0:
+              type: 'lambda'
+              name: 'MS-Notify'
+              path: 'service/lambda/notify/template.yaml'
+              command: 'cd service/lambda/notify && ./npm-install.sh'
