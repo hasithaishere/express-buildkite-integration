@@ -1,19 +1,16 @@
 steps:
-  - group: ":amazon-ecs: MS Scanner ECS"
-    key: "ms-scanner-ecs-group"
-    steps:
-      - label: "Initialize IaC Deployment"
-        command: "ls"
-        key: "ms-scanner-iac"
-        plugins:
-          - respond-io/iac-executor#v0.3.0:
-              type: 'ecs'
-              name: 'MS-Scanner'
-              path: 'service/scanner/template.yaml'
-      - label: "Build"
-        command: "service/scanner/.buildkite/scripts/docker-build"
-        key: "scanner-build"
-        depends_on: "ms-scanner-iac"
-      - label: "Deploy"
-        command: "service/scanner/.buildkite/scripts/deploy"
-        depends_on: "scanner-build"
+  - label: "Initialize IaC Deployment"
+    command: "ls"
+    key: "ms-scanner-iac"
+    plugins:
+      - respond-io/iac-executor#v0.3.0:
+          type: 'ecs'
+          name: 'MS-Scanner'
+          path: 'service/scanner/template.yaml'
+  - label: "Build"
+    command: "service/scanner/.buildkite/scripts/docker-build"
+    key: "scanner-build"
+    depends_on: "ms-scanner-iac"
+  - label: "Deploy"
+    command: "service/scanner/.buildkite/scripts/deploy"
+    depends_on: "scanner-build"

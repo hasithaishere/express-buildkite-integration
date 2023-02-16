@@ -1,10 +1,7 @@
 steps:
-  - group: ":aws-cloudformation: Infrastructure"
-    key: "infrastructure-group"
-    steps:
-      - label: "Initialize IaC Deployment"
-        command: "ls"
-        plugins:
-          - respond-io/iac-executor#v0.3.0:
-              type: 'infrastructure'
-              path: 'infra/cloudformation/'
+  - label: "Initialize IaC Deployment"
+    command: "ls"
+    plugins:
+      - respond-io/iac-executor#v0.3.0:
+          type: 'infrastructure'
+          path: 'infra/cloudformation/'
