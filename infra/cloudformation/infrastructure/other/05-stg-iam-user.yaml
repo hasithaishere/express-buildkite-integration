@@ -6,6 +6,16 @@ Metadata:
   StagingStackName: "staging--iam-resources-user-05"
 
 Parameters:
+  AmiID:
+    Type: AWS::EC2::Image::Id
+    Description: "Please Image ID of Deployment Controller."
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: "Select Key for SSH"
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  SubnetIds:
+    Type: CommaDelimitedList
   Environment:
     Type: String
     AllowedValues:
@@ -17,16 +27,6 @@ Parameters:
   LogPath:
     Type: String
     Default: "access-logs"
-  AmiID:
-    Type: AWS::EC2::Image::Id
-    Description: "Please Image ID of Deployment Controller."
-  KeyName:
-    Type: AWS::EC2::KeyPair::KeyName
-    Description: "Select Key for SSH"
-  VpcId:
-    Type: AWS::EC2::VPC::Id
-  SubnetIds:
-    Type: CommaDelimitedList
 
 Resources:
   BaseRole:
