@@ -65,15 +65,3 @@ Resources:
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
-
-Outputs:
-  AmiID:
-    Value: !Ref AmiID
-    Description: "Please Image ID of Deployment Controller."
-  KeyName:
-    Value: !Ref KeyName
-    Description: "Select Key for SSH"
-  VpcId:
-    Value: !Ref VpcId
-  SubnetIds:
-    Value: !Ref SubnetIds
