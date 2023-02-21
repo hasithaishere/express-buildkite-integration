@@ -29,6 +29,11 @@ Parameters:
     Default: "results-bucket"
   SecondaryBucketName:
     Type: String
+  DBPassword:
+    Type: String
+    MinLength: 10
+    MaxLength: 30
+    NoEcho: true
 
 Resources:
   HelloWorldFunction:
