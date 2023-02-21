@@ -17,6 +17,11 @@ Parameters:
   LogPath:
     Type: String
     Default: "access-logs"
+  ESPassword:
+    Type: String
+    MinLength: 10
+    MaxLength: 30
+    NoEcho: true
 
 Resources:
   BaseRole:

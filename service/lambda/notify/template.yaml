@@ -34,6 +34,11 @@ Parameters:
     MinLength: 10
     MaxLength: 30
     NoEcho: true
+  ESPassword:
+    Type: String
+    MinLength: 10
+    MaxLength: 30
+    NoEcho: true
 
 Resources:
   HelloWorldFunction:
