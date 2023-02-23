@@ -10,6 +10,8 @@ Globals:
   Function:
     Timeout: 3
     MemorySize: 128
+    Layers:
+      - !Ref AppLayer
 
 Metadata:
   Name: "MS-Notify-Lambda"
@@ -41,6 +43,17 @@ Parameters:
     NoEcho: true
 
 Resources:
+  AppLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${Environment}--test-appLayer"
+      Description: Layer to store shared code and env variables
+      ContentUri: layers/app
+      CompatibleRuntimes:
+        - nodejs16.x
+      LicenseInfo: 'MIT'
+      RetentionPolicy: Retain
+
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
