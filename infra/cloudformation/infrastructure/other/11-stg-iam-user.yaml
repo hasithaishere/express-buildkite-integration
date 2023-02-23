@@ -17,6 +17,10 @@ Parameters:
   LogPath:
     Type: String
     Default: "access-logs"
+  TempBucketName:
+    Type: String
+  TempBucketPath:
+    Type: String
 
 Resources:
   BaseRole:
