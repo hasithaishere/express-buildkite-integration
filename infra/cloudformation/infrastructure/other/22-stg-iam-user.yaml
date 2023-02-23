@@ -40,5 +40,5 @@ Resources:
               - s3:ListBucket
               - s3:GetObjectAcl
             Resource:
-              - !Sub "arn:aws:s3:::${Environment}--master-bucket"
-              - !Sub "arn:aws:s3:::${Environment}--master-bucket/log-path-1/*"
+              - !Sub "arn:aws:s3:::staging--master-bucket"
+              - !Sub "arn:aws:s3:::staging--master-bucket/log-path-1/*"
