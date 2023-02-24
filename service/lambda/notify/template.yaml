@@ -12,6 +12,7 @@ Globals:
     MemorySize: 128
     Layers:
       - !Ref AppLayer
+      - !Ref MySQLLayer
 
 Metadata:
   Name: "MS-Notify-Lambda"
@@ -49,6 +50,16 @@ Resources:
       LayerName: !Sub "${Environment}--test-appLayer"
       Description: Layer to store shared code and env variables
       ContentUri: layers/app
+      CompatibleRuntimes:
+        - nodejs16.x
+      LicenseInfo: 'MIT'
+      RetentionPolicy: Retain
+  MySQLLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${Environment}--test-mysqlLayer"
+      Description: Layer for mysql
+      ContentUri: layers/mysql
       CompatibleRuntimes:
         - nodejs16.x
       LicenseInfo: 'MIT'
