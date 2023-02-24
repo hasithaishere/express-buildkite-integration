@@ -1,4 +1,5 @@
 const appLayerLib = require('app')
+const mysqlLayerLib = require('mysql')
 // const url = 'http://checkip.amazonaws.com/';
 let response;
 
@@ -21,8 +22,9 @@ exports.lambdaHandler = async (event, context) => {
             'statusCode': 200,
             'body': JSON.stringify({
                 message: JSON.stringify({
-                    appLayerLib: Object.keys(appLayerLib)
-                }, null, 2),
+                    appLayerLib: Object.keys(appLayerLib),
+                    mysqlLayerLib: Object.keys(mysqlLayerLib)
+                }),
                 // location: ret.data.trim()
             })
         }
