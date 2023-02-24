@@ -5,12 +5,8 @@
 
 echo "--- Deploying using SAM ..."
 
-#export AWS_PROFILE=sam
-
-pwd
-
 cd service/lambda/notify
 
-sam build
+./npm-install.sh
 
-sam deploy
+sam deploy --no-fail-on-empty-changeset
