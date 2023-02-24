@@ -1,4 +1,4 @@
-// const axios = require('axios')
+const appLayerLib = require('app')
 // const url = 'http://checkip.amazonaws.com/';
 let response;
 
@@ -20,7 +20,9 @@ exports.lambdaHandler = async (event, context) => {
         response = {
             'statusCode': 200,
             'body': JSON.stringify({
-                message: 'hello world',
+                message: JSON.stringify({
+                    appLayerLib: Object.keys(appLayerLib)
+                }, null, 2),
                 // location: ret.data.trim()
             })
         }
