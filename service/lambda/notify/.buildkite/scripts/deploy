@@ -13,4 +13,4 @@ cd service/lambda/notify
 
 sam build
 
-#sam deploy --no-fail-on-empty-changeset
+sam deploy --no-fail-on-empty-changeset

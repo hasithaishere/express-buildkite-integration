@@ -2,8 +2,8 @@ steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
     plugins:
-      - respond-io/iac-executor#v0.3.15:
+      - respond-io/iac-executor#v0.3.16:
           type: 'lambda'
           name: 'MS-Notify'
           path: 'service/lambda/notify/template.yaml'
-          command: 'cd service/lambda/notify ; ./npm-install.sh'
+          command: 'service/lambda/notify/.buildkite/scripts/deploy'
