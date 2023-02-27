@@ -22,7 +22,7 @@ Resources:
   BaseRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: !Sub "${Environment}--iam-resources-user-stg"
+      RoleName: !Sub "${Environment}--iam-resources-user-stgx"
       AssumeRolePolicyDocument:
         Statement:
           - Action:

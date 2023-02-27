@@ -22,8 +22,8 @@ exports.lambdaHandler = async (event, context) => {
             'statusCode': 200,
             'body': JSON.stringify({
                 message: JSON.stringify({
-                    appLayerLib: Object.keys(appLayerLib),
-                    mysqlLayerLib: Object.keys(mysqlLayerLib)
+                    appLayerLibs: Object.keys(appLayerLib),
+                    mysqlLayerLibs: Object.keys(mysqlLayerLib)
                 }),
                 // location: ret.data.trim()
             })
