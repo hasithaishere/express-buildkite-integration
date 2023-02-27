@@ -3,7 +3,7 @@ Description: "Infrastructure for base AWS config.."
 
 Metadata:
   Name: "IAM-User-4"
-  StagingStackName: "staging--iam-resources-user-04"
+  ProductionStackName: "staging--iam-resources-user-04"
 
 Parameters:
   Environment:
