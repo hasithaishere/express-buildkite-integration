@@ -18,6 +18,8 @@ Parameters:
   LogPath:
     Type: String
     Default: "access-logs"
+  BackupBucketName:
+    Type: String
 
 Resources:
   ScannerServiceRole:
@@ -57,3 +59,8 @@ Resources:
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
+
+Outputs:
+  BackupBucket:
+    Description: "Backup S3 Bucket"
+    Value: !Ref BackupBucketName
