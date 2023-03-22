@@ -42,7 +42,7 @@ Parameters:
     MinLength: 10
     MaxLength: 30
     NoEcho: true
-  BackupResultBucketName:
+  APISuffix:
     Type: String
 
 Resources:
@@ -79,7 +79,7 @@ Resources:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
           Properties:
-            Path: /hello-api-v8
+            Path: !Sub "/hello-api-v8-${APISuffix}"
             Method: get
 
 Outputs:
