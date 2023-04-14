@@ -133,3 +133,5 @@ dist
 
 !service/lambda/notify/layers/app/nodejs/*
 !service/lambda/notify/layers/mysql/nodejs/*
+
+.aws-sam

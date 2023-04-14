@@ -1,37 +1,36 @@
 const appLayerLib = require('app')
 const mysqlLayerLib = require('mysql')
+const {promisify} = require('util');
+const sleep = promisify(setTimeout);
 // const url = 'http://checkip.amazonaws.com/';
 let response;
 
-/**
- *
- * Event doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-input-format
- * @param {Object} event - API Gateway Lambda Proxy Input Format
- *
- * Context doc: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-context.html 
- * @param {Object} context
- *
- * Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
- * @returns {Object} object - API Gateway Lambda Proxy Output Format
- * 
- */
-exports.lambdaHandler = async (event, context) => {
-    try {
-        // const ret = await axios(url);
-        response = {
-            'statusCode': 200,
-            'body': JSON.stringify({
-                message: JSON.stringify({
-                    appLayerLibs: Object.keys(appLayerLib),
-                    mysqlLayerLibs: Object.keys(mysqlLayerLib)
-                }),
-                // location: ret.data.trim()
-            })
-        }
-    } catch (err) {
-        console.log(err);
-        return err;
-    }
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    return response
+const lambdaHandler = async (event, context) => {
+   // const ret = await axios(url);
+   const randNo = randomInteger(10, 4000);
+   if (randNo < 1000) {
+       throw new Error("Error: " + randNo);
+   } else {
+       await sleep(randNo);
+   }
+
+   return {
+       'statusCode': 200,
+       'body': JSON.stringify({
+           message: JSON.stringify({
+               appLayerLibs: Object.keys(appLayerLib),
+               mysqlLayerLibs: Object.keys(mysqlLayerLib)
+           }),
+           timestamp: Date.now()
+           // location: ret.data.trim()
+       })
+   }
+
+    //return response
 };
+
+exports.lambdaHandler = appLayerLib.Sentry.AWSLambda.wrapHandler(lambdaHandler);
