@@ -1,6 +1,6 @@
 const appLayerLib = require('app')
 const mysqlLayerLib = require('mysql')
-const {promisify} = require('util');
+const { promisify } = require('util');
 const sleep = promisify(setTimeout);
 // const url = 'http://checkip.amazonaws.com/';
 let response;
@@ -10,25 +10,28 @@ function randomInteger(min, max) {
 }
 
 const lambdaHandler = async (event, context) => {
-   // const ret = await axios(url);
-   const randNo = randomInteger(10, 4000);
-   if (randNo < 2000) {
-       throw new Error(`New Error: ${randNo}`);
-   } else {
-       await sleep(randNo);
-   }
+    // const ret = await axios(url);
+    const randNo = randomInteger(10, 4000);
+    if (randNo < 1000) {
+        throw new Error(`New Error Less 1000: ${randNo}`);
+    } else if (randNo < 3000) {
+        throw new Error(`New Error Less 3000: ${randNo}`);
+    } else {
+        await sleep(randNo);
+    }
 
-   return {
-       'statusCode': 200,
-       'body': JSON.stringify({
-           message: JSON.stringify({
-               appLayerLibs: Object.keys(appLayerLib),
-               mysqlLayerLibs: Object.keys(mysqlLayerLib)
-           }),
-           timestamp: Date.now()
-           // location: ret.data.trim()
-       })
-   }
+    return {
+        'statusCode': 200,
+        'body': JSON.stringify({
+            message: JSON.stringify({
+                appLayerLibs: Object.keys(appLayerLib),
+                mysqlLayerLibs: Object.keys(mysqlLayerLib)
+            }),
+            timestamp: Date.now(),
+            waitTime: `${randNo}ms`
+            // location: ret.data.trim()
+        })
+    }
 
     //return response
 };
