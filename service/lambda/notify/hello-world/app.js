@@ -25,7 +25,9 @@ const lambdaHandler = async (event, context) => {
                appLayerLibs: Object.keys(appLayerLib),
                mysqlLayerLibs: Object.keys(mysqlLayerLib)
            }),
-           timestamp: Date.now()
+           timestamp: Date.now(),
+           memory: context.memoryLimitInMB,
+           functionVersion: context.functionVersion
            // location: ret.data.trim()
        })
    }
