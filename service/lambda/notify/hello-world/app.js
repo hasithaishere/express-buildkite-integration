@@ -14,8 +14,8 @@ const lambdaHandler = async (event, context) => {
     const randNo = randomInteger(10, 4000);
     if (randNo < 1000) {
         throw new Error(`New Error Less 1000: ${randNo}`);
-    } else if (randNo < 3000) {
-        throw new Error(`New Error Less 3000: ${randNo}`);
+    } else if (randNo <  4000) {
+        throw new Error(`New Error Less 4000: ${randNo}`);
     } else {
         await sleep(randNo);
     }
