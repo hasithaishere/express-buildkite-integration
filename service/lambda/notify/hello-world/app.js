@@ -11,11 +11,11 @@ function randomInteger(min, max) {
 
 const lambdaHandler = async (event, context) => {
     // const ret = await axios(url);
-    const randNo = randomInteger(10, 9790);
-    if (randNo < 1990) {
-        throw new Error(`New Error Less 1990: ${randNo}`);
-    } else if (randNo <  3990) {
-        throw new Error(`New Error Less 3990: ${randNo}`);
+    const randNo = randomInteger(10, 9795);
+    if (randNo < 1995) {
+        throw new Error(`New Error Less 1995: ${randNo}`);
+    } else if (randNo <  3995) {
+        throw new Error(`New Error Less 3995: ${randNo}`);
     } else {
         await sleep(randNo);
     }
