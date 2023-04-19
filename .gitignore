@@ -135,3 +135,4 @@ dist
 !service/lambda/notify/layers/mysql/nodejs/*
 
 .aws-sam
+samconfig.toml*

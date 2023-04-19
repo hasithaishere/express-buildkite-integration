@@ -36,4 +36,10 @@ const lambdaHandler = async (event, context) => {
     //return response
 };
 
-exports.lambdaHandler = appLayerLib.Sentry.AWSLambda.wrapHandler(lambdaHandler);
+let handler = lambdaHandler;
+
+if (process.env.SENTRY_DSN !== undefined) {
+    handler = appLayerLib.Sentry.AWSLambda.wrapHandler(lambdaHandler);
+}
+
+exports.lambdaHandler = handler;
