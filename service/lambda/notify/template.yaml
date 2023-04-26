@@ -73,6 +73,15 @@ Resources:
       CodeUri: hello-world/
       Handler: app.lambdaHandler
       Runtime: nodejs16.x
+      Environment:
+        Variables:
+          NODE_OPTIONS: -r elastic-apm-node/start
+          ELASTIC_APM_LAMBDA_APM_SERVER: https://XXXXXX.apm.us-central1.gcp.cloud.es.io:443
+          ELASTIC_APM_SECRET_TOKEN: XXXXX
+          ELASTIC_APM_SEND_STRATEGY: background
+      Layers:
+        - arn:aws:lambda:us-east-1:267093732750:layer:elastic-apm-extension-ver-1-3-1-x86_64:1
+        - arn:aws:lambda:us-east-1:267093732750:layer:elastic-apm-node-ver-3-44-1:1
       Architectures:
         - x86_64
       Events:
