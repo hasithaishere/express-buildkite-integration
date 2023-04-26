@@ -2,7 +2,6 @@ const appLayerLib = require('app')
 const mysqlLayerLib = require('mysql')
 const { promisify } = require('util');
 const sleep = promisify(setTimeout);
-// const url = 'http://checkip.amazonaws.com/';
 let response;
 
 function randomInteger(min, max) {
