@@ -3,8 +3,6 @@ name: PR metadata annotation
 on:
   pull_request:
     types: [closed]
-    branches:
-      - flight/**
 
 jobs:
   annotate-pr:
