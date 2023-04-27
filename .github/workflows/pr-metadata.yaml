@@ -10,7 +10,7 @@ jobs:
     name: Annotates pull request with metadata
     steps:
       - name: Annotate PR
-        uses: link-/PR-metadata-action@main
+        uses: hasithaishere/pr-metadata-action@main
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
