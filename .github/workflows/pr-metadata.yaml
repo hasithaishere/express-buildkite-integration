@@ -2,10 +2,13 @@ name: PR metadata annotation
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [closed]
+    branches:
+      - flight/**
 
 jobs:
   annotate-pr:
+    if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     name: Annotates pull request with metadata
     steps:
