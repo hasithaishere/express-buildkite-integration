@@ -1,5 +1,5 @@
 {
-  "name": "notify",
+  "name": "notify-lambda",
   "version": "1.0.0",
   "description": "This project for notifying",
   "main": "index.js",
