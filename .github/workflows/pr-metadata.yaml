@@ -1,9 +1,8 @@
 name: PR metadata annotation
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types: [ closed ]
 
 jobs:
   annotate-pr:
