@@ -6,7 +6,7 @@ on:
 
 jobs:
   annotate-pr:
-    if: github.event.pull_request.merged && startsWith(github.event.pull_request.head.ref, 'flight/')
+    if: github.event.pull_request.merged && (startsWith(github.event.pull_request.head.ref, 'flight/') || startsWith(github.event.pull_request.head.ref, 'hotfix/'))
     runs-on: ubuntu-latest
     name: Annotates pull request with metadata
     steps:
