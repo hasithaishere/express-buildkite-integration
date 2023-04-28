@@ -2,11 +2,11 @@ name: PR metadata annotation
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [ closed ]
 
 jobs:
   annotate-pr:
-    if: github.event.pull_request.merged
+    if: github.event.pull_request.merged && startsWith(github.event.pull_request.head.ref, 'flight/')
     runs-on: ubuntu-latest
     name: Annotates pull request with metadata
     steps:
@@ -15,5 +15,5 @@ jobs:
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
-          pr_number: ${{ github.event.number }}
+          pr_number: 12
           token: ${{ secrets.PR_GITHUB_TOKEN }}
