@@ -9,6 +9,7 @@ function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// This is enhancement
 const lambdaHandler = async (event, context) => {
     // const ret = await axios(url);
     const randNo = randomInteger(10, 8700);
