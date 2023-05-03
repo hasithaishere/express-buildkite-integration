@@ -4,7 +4,7 @@ const { promisify } = require('util');
 const sleep = promisify(setTimeout);
 let response;
 
-// Add function comment. Update Function.
+// Add function comment.
 function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
