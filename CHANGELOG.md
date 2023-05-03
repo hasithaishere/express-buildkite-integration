@@ -1,5 +1,30 @@
 
             
+## [v1.3.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.3.0...v1.3.1) (2023-05-03)
+
+### Features
+
+* Update readme.md ([e9c7710](https://github.com/hasithaishere/express-buildkite-integration/commit/e9c77108baee3d468c438666d41f7b2dd31ff5dc))
+
+### Bug Fixes
+
+* Update app.js ([06df270](https://github.com/hasithaishere/express-buildkite-integration/commit/06df270f516c7e286d03e925583af99382240762))
+* Update 01-iam.yaml ([9f11fe2](https://github.com/hasithaishere/express-buildkite-integration/commit/9f11fe25eae8d68739f391e836b03c8731556b7c))
+
+### Other Commits
+
+* Update app.js ([4f91611](https://github.com/hasithaishere/express-buildkite-integration/commit/4f9161131ff5a8c84c057155f40fed9743da56e5))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `README.md` | Other |
+| `infra/cloudformation/infrastructure/01-iam.yaml` | Infrastructure |
+| `Notify` | Lambda |
+| `Scanner` | ECS |
+
+            
+            
 ## [v1.3.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.2.1...v1.3.0) (2023-05-03)
 
 ### Features
@@ -424,6 +449,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
