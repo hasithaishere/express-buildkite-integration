@@ -1,5 +1,20 @@
 
             
+## [v1.2.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.2.0...v1.2.1) (2023-05-03)
+
+
+
+### Bug Fixes
+
+* Update index.js (#28) ([8e68aeb](https://github.com/hasithaishere/express-buildkite-integration/commit/8e68aeb3b3cba3989d604b113f91c6eb6d147717))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify` | Lambda |
+
+            
+            
 ## [v1.2.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.1.0...v1.2.0) (2023-05-03)
 
 
@@ -361,6 +376,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
