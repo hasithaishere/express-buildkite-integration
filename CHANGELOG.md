@@ -1,5 +1,20 @@
 
             
+## [v1.3.2](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.3.1...v1.3.2) (2023-05-03)
+
+
+### Bug Fixes
+
+* Update pr-metadata.yaml ([0272932](https://github.com/hasithaishere/express-buildkite-integration/commit/02729324232e93fb97e8d17343e9ddf99b1a8e58))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/pr-metadata.yaml` | Other |
+
+            
+            
 ## [v1.3.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.3.0...v1.3.1) (2023-05-03)
 
 ### Features
@@ -449,6 +464,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
