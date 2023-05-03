@@ -1,6 +1,6 @@
 {
   "name": "notify-lambda",
-  "version": "1.0.0",
+  "version": "v1.0.25",
   "description": "This project for notifying",
   "main": "index.js",
   "scripts": {
