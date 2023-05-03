@@ -119,6 +119,61 @@
 * Update action ([8a339fe](https://github.com/hasithaishere/express-buildkite-integration/commit/8a339fe439befe5b4bb94c23dc670b50574be77e))
 * Update action ([3742723](https://github.com/hasithaishere/express-buildkite-integration/commit/3742723ba2abf27f65fb05fefdae22268d53f6bb))
 * Update workflow ([bc5d2be](https://github.com/hasithaishere/express-buildkite-integration/commit/bc5d2be962b01a887e10a194dab54a41119dbd45))
+* Update action event ([ad9121d](https://github.com/hasithaishere/express-buildkite-integration/commit/ad9121dd544735793c032aef4ea1e89ae5792dd7))
+
+### Bug Fixes
+
+* Update app.js (#25) ([cb3fb38](https://github.com/hasithaishere/express-buildkite-integration/commit/cb3fb381496613cd04ce05bc28bccb1aed8e5d30))
+* Update CHANGELOG.md - reset ([756f57f](https://github.com/hasithaishere/express-buildkite-integration/commit/756f57fd34dcff5e6d9cf4671441ae5943c49a80))
+* Update CHANGELOG.md (#24) ([d59f3c4](https://github.com/hasithaishere/express-buildkite-integration/commit/d59f3c4f920d4b8a1465e62ea6c7922954779865))
+* Create CHANGELOG.md ([0f3e03d](https://github.com/hasithaishere/express-buildkite-integration/commit/0f3e03db752f7057df387ba89732d0f804901235))
+* Update app.js (#23) ([8e244e5](https://github.com/hasithaishere/express-buildkite-integration/commit/8e244e5d4e56f1a047f464fca0497135e4b0a664))
+* Update app.js (#22) ([9eb73d8](https://github.com/hasithaishere/express-buildkite-integration/commit/9eb73d8b4281d2878d81fafed824df71965b5faa))
+* Update app.js (#21) ([7bd401f](https://github.com/hasithaishere/express-buildkite-integration/commit/7bd401f8304cbb20384f0fa4bf778d6280314a8e))
+* Update 01-iam.yaml (#12) ([6b2e275](https://github.com/hasithaishere/express-buildkite-integration/commit/6b2e275519ae05da114d770ca252b055c6aee458))
+* Update app.js (#20) ([10ce323](https://github.com/hasithaishere/express-buildkite-integration/commit/10ce323143edeef70a50ed0c1157c9f1cb2e9cb2))
+* Update 01-iam.yaml (#19) ([e03d7d2](https://github.com/hasithaishere/express-buildkite-integration/commit/e03d7d233aeab3cfe0baec19cf8d026e6c05f293))
+* Update README.md (#18) ([2a3feb7](https://github.com/hasithaishere/express-buildkite-integration/commit/2a3feb7305db63cae5fa3a0b57a4f335886acf7c))
+* Update package.json (#17) ([6132860](https://github.com/hasithaishere/express-buildkite-integration/commit/6132860c35b47786801a76672d4240e5816497a4))
+* Update 01-iam.yaml (#16) ([c083566](https://github.com/hasithaishere/express-buildkite-integration/commit/c08356663cce74c09537e703b31681a1d16d003c))
+* Update pr-metadata.yaml ([a77ed35](https://github.com/hasithaishere/express-buildkite-integration/commit/a77ed354f0d6f82ed9178780b48dbceb4240b04e))
+* Update index.js (#15) ([bb989b7](https://github.com/hasithaishere/express-buildkite-integration/commit/bb989b75775f073e83fafbcd34a6448ceae32685))
+* Update app.js (#11) ([b8c7f7d](https://github.com/hasithaishere/express-buildkite-integration/commit/b8c7f7dc1f8e74b0ccedb80c73179f361a3718b5))
+* Update pr-metadata.yaml ([797932b](https://github.com/hasithaishere/express-buildkite-integration/commit/797932b6139e33ba0adf80621100561db6d06ffc))
+* Update 01-iam.yaml (#14) ([cb29d81](https://github.com/hasithaishere/express-buildkite-integration/commit/cb29d81319ca307109de954714fd71fe8580195d))
+* Update pr-metadata.yaml ([a3b5345](https://github.com/hasithaishere/express-buildkite-integration/commit/a3b5345e56bf82ac1da98812d25a8dffd5c334be))
+* Update 01-iam.yaml (#13) ([045e36e](https://github.com/hasithaishere/express-buildkite-integration/commit/045e36e8c54ece6beb05999996cdaffb55447b11))
+* Update 01-iam.yaml ([c9ef7f7](https://github.com/hasithaishere/express-buildkite-integration/commit/c9ef7f71e716fbf419319943083205bbb14595f3))
+* Update app.js ([9fc7d59](https://github.com/hasithaishere/express-buildkite-integration/commit/9fc7d59294300c82910ea76d78b6dc270ef7b6ae))
+* Update pr-metadata.yaml ([aab224f](https://github.com/hasithaishere/express-buildkite-integration/commit/aab224f79ac494416cd3a417d406cc52aa22bbfd))
+* Update pr-metadata.yaml ([aa5410b](https://github.com/hasithaishere/express-buildkite-integration/commit/aa5410bba64e7c74638c88be12c1e8dd8d577bb4))
+* Update 01-iam.yaml (#6) ([5e424ca](https://github.com/hasithaishere/express-buildkite-integration/commit/5e424cacb957267e1e0b8594cec8bdbe69191f86))
+* Update index.js (#9) ([ffa6777](https://github.com/hasithaishere/express-buildkite-integration/commit/ffa67779f625f2cbd20d859f8cbbf6d24f600851))
+* Update 01-iam.yaml (#8) ([4da294d](https://github.com/hasithaishere/express-buildkite-integration/commit/4da294d7bc237b7db4c738199d97494e9e0b97df))
+* Update pr-metadata.yaml ([a365e51](https://github.com/hasithaishere/express-buildkite-integration/commit/a365e51ee6e753bce9314caca802cc57c271a0e1))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/pr-metadata.yaml` | Other |
+| `CHANGELOG.md` | Other |
+| `README.md` | Other |
+| `github-context.json` | Other |
+| `package.json` | Other |
+| `Notify` | Lambda |
+| `Scanner` | ECS |
+
+            
+            
+## [v1.0.25](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.0.24...v1.0.25) (2023-05-03)
+
+
+### Bug Fixes
+
+* Add package.json for scanner service ([e189f55](https://github.com/hasithaishere/express-buildkite-integration/commit/e189f558f897fffdf52b485835ce298113e6bd39))
+* Update action ([8a339fe](https://github.com/hasithaishere/express-buildkite-integration/commit/8a339fe439befe5b4bb94c23dc670b50574be77e))
+* Update action ([3742723](https://github.com/hasithaishere/express-buildkite-integration/commit/3742723ba2abf27f65fb05fefdae22268d53f6bb))
+* Update workflow ([bc5d2be](https://github.com/hasithaishere/express-buildkite-integration/commit/bc5d2be962b01a887e10a194dab54a41119dbd45))
 * Update Action event ([ad9121d](https://github.com/hasithaishere/express-buildkite-integration/commit/ad9121dd544735793c032aef4ea1e89ae5792dd7))
 
 ### Bug Fixes
@@ -276,6 +331,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
