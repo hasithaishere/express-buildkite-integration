@@ -1,7 +1,5 @@
-// This is the mocked ECS service
+// This is the mocked ECS service. This is enhancement
 const http = require('http');
-
-// This is the comment.
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
