@@ -11,6 +11,24 @@
 
 * Update app.js ([6b6b17e](https://github.com/hasithaishere/express-buildkite-integration/commit/6b6b17e2fcf1126c74cd5a8eeee8bc1cc3b577ae))
 
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `CHANGELOG.md` | Other |
+
+            
+            
+## [v1.4.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.4.0...v1.4.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* Update app.js ([97e7ab5](https://github.com/hasithaishere/express-buildkite-integration/commit/97e7ab547884ad912cb7cb930fa8d1c739dd3c9d))
+
+### Other Commits
+
+* Update app.js ([6b6b17e](https://github.com/hasithaishere/express-buildkite-integration/commit/6b6b17e2fcf1126c74cd5a8eeee8bc1cc3b577ae))
+
 
             
             
@@ -501,6 +519,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
