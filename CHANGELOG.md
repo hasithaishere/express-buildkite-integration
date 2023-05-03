@@ -1,5 +1,24 @@
 
             
+## [v1.6.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.5.1...v1.6.0) (2023-05-03)
+
+### Features
+
+* Update app.js ([28ca57b](https://github.com/hasithaishere/express-buildkite-integration/commit/28ca57b5faee325b61b092634e1982e27f184087))
+
+
+### Other Commits
+
+* Update 01-iam.yaml ([cea7bc9](https://github.com/hasithaishere/express-buildkite-integration/commit/cea7bc9ecc582059644cc9a7f4137bee330f4928))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `infra/cloudformation/infrastructure/01-iam.yaml` | Infrastructure |
+| `Scanner` | ECS |
+
+            
+            
 ## [v1.5.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.5.0...v1.5.1) (2023-05-03)
 
 
@@ -602,6 +621,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
