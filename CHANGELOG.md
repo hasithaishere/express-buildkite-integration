@@ -1,5 +1,20 @@
 
             
+## [v1.1.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.0.25...v1.1.0) (2023-05-03)
+
+
+
+### Bug Fixes
+
+* Update app.js (#26) ([8a58945](https://github.com/hasithaishere/express-buildkite-integration/commit/8a58945aabc60436b32e7592769a38c7fb0ebacb))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Scanner` | ECS |
+
+            
+            
 ## [v1.0.25](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.0.24...v1.0.25) (2023-05-03)
 
 
@@ -331,6 +346,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
