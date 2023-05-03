@@ -15,5 +15,4 @@ jobs:
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
-          pr_number: 12
           token: ${{ secrets.PR_GITHUB_TOKEN }}
