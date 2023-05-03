@@ -1,6 +1,6 @@
 {
   "name": "scanner",
-  "version": "1.0.0",
+  "version": "v1.0.25",
   "description": "",
   "main": "app.js",
   "scripts": {
