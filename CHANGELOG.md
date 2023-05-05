@@ -1,5 +1,28 @@
 
             
+## [v1.7.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.6.0...v1.7.0) (2023-05-05)
+
+### Features
+
+* Update app.js ([e9fbe4c](https://github.com/hasithaishere/express-buildkite-integration/commit/e9fbe4c03bd10e713fcadbc20c2307d85642d066))
+
+### Bug Fixes
+
+* Update pr-metadata.yaml ([07c982f](https://github.com/hasithaishere/express-buildkite-integration/commit/07c982febb1dff0ac9d3fd75222ebc67955d005e))
+
+### Other Commits
+
+* Update index.js ([331eca2](https://github.com/hasithaishere/express-buildkite-integration/commit/331eca21ab8c0a256f16d165321b7a2c2b76d6ed))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/pr-metadata.yaml` | Other |
+| `Notify` | Lambda |
+| `Scanner` | ECS |
+
+            
+            
 ## [v1.6.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.5.1...v1.6.0) (2023-05-03)
 
 ### Features
@@ -621,6 +644,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
