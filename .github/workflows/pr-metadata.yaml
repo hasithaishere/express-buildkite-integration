@@ -1,18 +1,18 @@
-name: PR metadata annotation
+name: Tag and Release
 
 on:
   pull_request:
     types: [ closed ]
 
 jobs:
-  annotate-pr:
+  release:
     if: github.event.pull_request.merged && (startsWith(github.event.pull_request.head.ref, 'flight/') || startsWith(github.event.pull_request.head.ref, 'hotfix/'))
     runs-on: ubuntu-latest
-    name: Annotates pull request with metadata
+    name: Tag and Release
     steps:
-      - name: Annotate PR
-        uses: hasithaishere/pr-metadata-action@main
+      - name: Release
+        uses: respond-io/release-management-action@main
         with:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.event.repository.name }}
-          token: ${{ secrets.PR_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
