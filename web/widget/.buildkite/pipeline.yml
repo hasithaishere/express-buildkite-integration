@@ -1,6 +1,6 @@
 steps:
   - block: ":rocket: Continue Web-Widget deployment?"
-    if: build.branch == "dev"
+    if: build.branch == "main"
   - label: "Growth Tool Build & Upload Artifacts"
     command: "web/widget/.buildkite/scripts/docker-build-and-upload"
     key: "build-widget"
