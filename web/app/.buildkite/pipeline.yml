@@ -1,0 +1,9 @@
+steps:
+  - block: ":rocket: Do you want to continue deployment?"
+    if: build.branch == "main"
+  - label: "Webapp Build & Upload Artifacts"
+    command: "web/app/.buildkite/scripts/docker-build-and-deploy"
+    key: "webapp-build"
+  - label: "Invalidate Cache"
+    command: "web/app/.buildkite/scripts/invalidate-cache"
+    depends_on: "webapp-build"

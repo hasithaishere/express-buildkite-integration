@@ -23,6 +23,22 @@ steps:
               config:
                 command: "buildkite-agent pipeline upload infra/cloudformation/.buildkite/pipeline.yml"
                 label: ":building_construction: Base Infrastructure"
+            # ========================== Pipeline for Web ==========================
+            - path:
+                - "web/app"
+              config:
+                command: "buildkite-agent pipeline upload web/app/.buildkite/pipeline.yml"
+                label: ":art: Web - App"
+            - path:
+                - "web/webchat"
+              config:
+                command: "buildkite-agent pipeline upload web/webchat/.buildkite/pipeline.yml"
+                label: ":art: Web - Webchat"
+            - path:
+                - "web/widget"
+              config:
+                command: "buildkite-agent pipeline upload web/widget/.buildkite/pipeline.yml"
+                label: ":art: Web - Widget"
   - wait
 
   # Tagging build last commit for diffing purpose

@@ -1,0 +1,9 @@
+steps:
+  - block: ":rocket: Do you want to continue deployment?"
+    if: build.branch == "main"
+  - label: "Growth Tool Build & Upload Artifacts"
+    command: "web/widget/.buildkite/scripts/docker-build-and-upload"
+    key: "build-widget"
+  - label: "Invalidate Cache"
+    command: "web/widget/.buildkite/scripts/invalidate-cache"
+    depends_on: "build-widget"

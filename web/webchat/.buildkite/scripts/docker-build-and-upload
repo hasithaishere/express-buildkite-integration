@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Execute docker-build-and-upload script"
