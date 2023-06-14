@@ -1,6 +1,6 @@
 steps:
-  - block: ":rocket: Do you want to continue deployment?"
-    if: build.branch == "main"
+  - block: ":rocket: Continue Web-App deployment?"
+    if: build.branch == "dev"
   - label: "Webapp Build & Upload Artifacts"
     command: "web/app/.buildkite/scripts/docker-build-and-deploy"
     key: "webapp-build"
