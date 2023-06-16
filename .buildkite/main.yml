@@ -43,5 +43,5 @@ steps:
 
   # Tagging build last commit for diffing purpose
   - label: "Tag Build"
-    if:  build.branch == 'main'
+    if:  build.branch == 'master'
     command: "echo $(git rev-parse HEAD) > ~/last_successful_production_build"

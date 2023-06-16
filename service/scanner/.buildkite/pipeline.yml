@@ -1,4 +1,6 @@
 steps:
+  - block: ":hammer_and_wrench: Continue Scanner ECS Deployment?"
+    if: build.branch == "master"
   - label: "Initialize IaC Deployment"
     command: "ls"
     key: "ms-scanner-iac"
