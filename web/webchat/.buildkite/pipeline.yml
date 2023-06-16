@@ -1,6 +1,6 @@
 steps:
   - block: ":rocket: Continue Web-Chat deployment?"
-    if: build.branch == "main"
+    if: build.branch == "master"
   - label: "Webchat Build & Upload Artifacts"
     command: "web/webchat/.buildkite/scripts/docker-build-and-upload"
     key: "build-webchat"
