@@ -2,7 +2,7 @@ steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
     plugins:
-      - respond-io/iac-executor#v0.3.28:
+      - respond-io/iac-executor#v0.3.31:
           type: 'lambda'
           name: 'MS-Notify'
           path: 'service/lambda/notify/template.yaml'
