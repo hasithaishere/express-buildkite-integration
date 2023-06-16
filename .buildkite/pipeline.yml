@@ -4,3 +4,4 @@ steps:
   - label: "Running Main Pipeline"
     if:  build.branch == 'master'
     command: "buildkite-agent pipeline upload .buildkite/main.yml"
+    parallelism: 5
