@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for base AWS config."
+Description: "Infrastructure for base AWS config.."
 
 Metadata:
   Name: "Infra-IAM-User-Prod"
