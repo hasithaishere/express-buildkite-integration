@@ -2,6 +2,12 @@
 
 set -ueo pipefail
 
-LATEST_BUILT_TAG=$(head -n 1 ~/last_successful_production_build)
+if [[ $BUILDKITE_BRANCH = master ]]
+then
+  LATEST_BUILT_TAG=$(head -n 1 ~/last_successful_production_build)
+else
+  LATEST_BUILT_TAG=$(head -n 1 ~/last_successful_staging_build)
+fi
+
 
 git diff --name-only $LATEST_BUILT_TAG
