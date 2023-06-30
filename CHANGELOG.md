@@ -1,5 +1,21 @@
 
             
+## [v1.15.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.14.0...v1.15.0) (2023-06-30)
+
+
+### Bug Fixes
+
+* Test web section and lambda functions ([5446c3a](https://github.com/hasithaishere/express-buildkite-integration/commit/5446c3a26712be4747d91dddb01c195bdc5a8aff))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+
+
+            
+            
 ## [v1.14.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.13.0...v1.14.0) (2023-06-30)
 
 
@@ -791,6 +807,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
