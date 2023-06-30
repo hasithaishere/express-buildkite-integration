@@ -1,6 +1,6 @@
 {
   "name": "express-buildkite-integration",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "POC for Buildkite CICD integration with NodeJS Express Framework.",
   "main": "index.js",
   "scripts": {
