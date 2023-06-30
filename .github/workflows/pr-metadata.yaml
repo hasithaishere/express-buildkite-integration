@@ -3,6 +3,8 @@ name: Tag and Release
 on:
   pull_request:
     types: [ closed ]
+    branches:
+      - master
 
 jobs:
   release:
@@ -11,8 +13,8 @@ jobs:
     name: Tag and Release
     steps:
       - name: Release
-        uses: respond-io/release-management-action@main
+        uses: respond-io/release-management-action@feat/integrate-config-files
         with:
-          owner: ${{ github.repository_owner }}
-          repo: ${{ github.event.repository.name }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          config-path: .github/config/release-management.yaml
+          release-prefix: v
