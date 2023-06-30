@@ -1,0 +1,22 @@
+{
+    "name": "rb-web-widget-v3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --config ./webpack.prod.js"
+    },
+    "browserslist": [
+      "defaults"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+
+    },
+    "dependencies": {
+
+    }
+  }
+  
