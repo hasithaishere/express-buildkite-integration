@@ -1,5 +1,22 @@
 
             
+## [v1.14.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.13.0...v1.14.0) (2023-06-30)
+
+
+### Bug Fixes
+
+* Test lambda layers ([6913375](https://github.com/hasithaishere/express-buildkite-integration/commit/6913375e6a6f81372a4bda0dfb44592b14429ba3))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+
+
+            
+            
 ## [v1.13.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.12.0...v1.13.0) (2023-06-30)
 
 
@@ -757,6 +774,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
