@@ -1,5 +1,25 @@
 
             
+## [v1.12.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.11.0...v1.12.0) (2023-06-30)
+
+
+### Bug Fixes
+
+* Update content ([c34d596](https://github.com/hasithaishere/express-buildkite-integration/commit/c34d596c4be3116cefb65ec61cf2e79f7eb4adea))
+* Update config ([3434058](https://github.com/hasithaishere/express-buildkite-integration/commit/3434058b419b9e5dd7c93fd98834924eeba39f40))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/config/release-management.yaml` | Other |
+| `Infra-cloudformation` | Infrastructure |
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+
+
+            
+            
 ## [v1.11.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.10.0...v1.11.0) (2023-06-30)
 
 
@@ -720,6 +740,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
