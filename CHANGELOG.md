@@ -1,5 +1,21 @@
 
             
+## [v1.18.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.17.0...v1.18.0) (2023-06-30)
+
+### Features
+
+* Update comments ([bf7a231](https://github.com/hasithaishere/express-buildkite-integration/commit/bf7a23198fd8e89fdf241b9cea03b3f51cf547f8))
+
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+
+
+            
+            
 ## [v1.17.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.16.0...v1.17.0) (2023-06-30)
 
 
@@ -857,6 +873,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
