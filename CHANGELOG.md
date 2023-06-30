@@ -1,5 +1,27 @@
 
             
+## [v1.19.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.18.0...v1.19.0) (2023-06-30)
+
+
+### Bug Fixes
+
+* Service hidden issue ([fbc804e](https://github.com/hasithaishere/express-buildkite-integration/commit/fbc804e2d220dffa858b58124b7623e497afc0d9))
+
+### Other Commits
+
+* Update pr-metadata.yaml ([4221df9](https://github.com/hasithaishere/express-buildkite-integration/commit/4221df97b1feeb580283f8f4792c5693dd41a9de))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/pr-metadata.yaml` | Other |
+| `Infra-cloudformation` | Infrastructure |
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+
+
+            
+            
 ## [v1.18.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.17.0...v1.18.0) (2023-06-30)
 
 ### Features
@@ -873,6 +895,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
