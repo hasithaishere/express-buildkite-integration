@@ -1,5 +1,14 @@
 
             
+## [v1.11.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.10.0...v1.11.0) (2023-06-30)
+
+
+
+
+
+
+            
+            
 ## [v1.10.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.9.0...v1.10.0) (2023-06-30)
 
 
@@ -711,6 +720,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
