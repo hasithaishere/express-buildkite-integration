@@ -1,5 +1,48 @@
 
             
+## [v1.9.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.8.0...v1.9.0) (2023-06-30)
+
+### Features
+
+* Implement new config change ([594201d](https://github.com/hasithaishere/express-buildkite-integration/commit/594201dac886a03a5c756e5933d316a5b2b291a7))
+* Add sample web apps ([0b83b94](https://github.com/hasithaishere/express-buildkite-integration/commit/0b83b94532dd7ad059c3a47bf3ffdd55d744144b))
+
+### Bug Fixes
+
+* Remove parallelism config - that&#x27;s a shit  hankey ([93b413f](https://github.com/hasithaishere/express-buildkite-integration/commit/93b413f2a7d59ef08c094292769b0dabf5147c2d))
+* Update parallelism config ([16c2c78](https://github.com/hasithaishere/express-buildkite-integration/commit/16c2c78d18ee7e8a4a91297d92de9dd2a3cb6a39))
+* Add dummy changes for test multi-agents ([96263b7](https://github.com/hasithaishere/express-buildkite-integration/commit/96263b7068004083fcd7814cf796eab5b326ed45))
+* Update block&#x27;s branch for web apps ([d3702d7](https://github.com/hasithaishere/express-buildkite-integration/commit/d3702d7985b9d23dcfd14ad0e9544e7a83f3c081))
+* Update default git branch and ecs block step ([e5ca09e](https://github.com/hasithaishere/express-buildkite-integration/commit/e5ca09ea2e0cd2091d86ebbe17a910d831e9f840))
+* Update iac plugin version - v0.3.31 ([26eade7](https://github.com/hasithaishere/express-buildkite-integration/commit/26eade74ff6eb94467eb651a551930b8d48260a5))
+* Update version of iac plugin ([fbf6e9e](https://github.com/hasithaishere/express-buildkite-integration/commit/fbf6e9ee3829c8fdd61a1c7c5ea13d27d76d5e12))
+* Update branch ([bd172e3](https://github.com/hasithaishere/express-buildkite-integration/commit/bd172e35f3903b598bf086402f5a7ed44a07ce5c))
+* Update test ([72bf7a5](https://github.com/hasithaishere/express-buildkite-integration/commit/72bf7a5ff98eefeea857423633fdbef0edaeab57))
+* Update for test staging ([98ec052](https://github.com/hasithaishere/express-buildkite-integration/commit/98ec052a7ca4397b48af513ce0469c88e74563b9))
+* Remove unused apm ([0cf79a9](https://github.com/hasithaishere/express-buildkite-integration/commit/0cf79a928289fa6757e99d31857935703383787c))
+* Update iac plugin version ([07a986b](https://github.com/hasithaishere/express-buildkite-integration/commit/07a986b6cdd9b0f2ec78ce2ea322690e8057e5b9))
+* Add apm layers - to fail ([d437898](https://github.com/hasithaishere/express-buildkite-integration/commit/d43789855e68a9038eba5caea8abab0cfea6d488))
+* Remove unused elastic apm layers ([55f8212](https://github.com/hasithaishere/express-buildkite-integration/commit/55f8212a0ca95114517a7bc12f0b75b699dd83fc))
+* Update the iac plugin version ([776af59](https://github.com/hasithaishere/express-buildkite-integration/commit/776af59e4d795b6f1d25b6860b8ecbbdd819d9e6))
+* Delete unwanted cfts ([8ba57ce](https://github.com/hasithaishere/express-buildkite-integration/commit/8ba57ce3b5d98e45fbff790817a8f3a267ee8fcf))
+
+### Other Commits
+
+* Revert branch to main ([5065239](https://github.com/hasithaishere/express-buildkite-integration/commit/5065239c48efc137893348a844f1c25677683207))
+* Update template.yaml ([bd9a30d](https://github.com/hasithaishere/express-buildkite-integration/commit/bd9a30da4493b6d90d931fd0c45ed12903848128))
+* Update pr-metadata.yaml ([0dd5956](https://github.com/hasithaishere/express-buildkite-integration/commit/0dd5956586652a1b2881f9b85f39a2f4142e2650))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.buildkite/main.yml` | Other |
+| `infra/cloudformation/.buildkite/pipeline.yml` | Infrastructure |
+| `Notify` | Lambda |
+| `Scanner` | ECS |
+
+
+            
+            
 ## [v1.8.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.7.0...v1.8.0) (2023-05-05)
 
 ### Features
@@ -659,6 +702,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
