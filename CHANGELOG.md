@@ -1,5 +1,22 @@
 
             
+## [v1.15.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.15.0...v1.15.1) (2023-06-30)
+
+
+### Bug Fixes
+
+* Update action version ([401bf70](https://github.com/hasithaishere/express-buildkite-integration/commit/401bf70ca7976a8e21e1f42f48bdb4488779f03f))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/pr-metadata.yaml` | Other |
+| `Webapp` | Lambda |
+
+
+            
+            
 ## [v1.15.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.14.0...v1.15.0) (2023-06-30)
 
 
@@ -807,6 +824,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
