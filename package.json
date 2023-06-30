@@ -1,7 +1,7 @@
 {
   "name": "express-buildkite-integration",
   "version": "1.11.0",
-  "description": "POC for Buildkite CICD integration with NodeJS Express Framework",
+  "description": "POC for Buildkite CICD integration with NodeJS Express Framework.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

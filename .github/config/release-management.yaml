@@ -1,16 +1,17 @@
-ecs:
-  - path: service/scanner
-    name: scanner-service
-lambda:
-  - path: service/lambda/notify
-    name: notify-lambda
-infrastructure:
-  - path: infra/cloudformation
-    name: infra-cloudformation
-web:
-  - path: web/app
-    name: webapp
-  - path: web/webchat
-    name: webchat
-  - path: web/widget
-    name: widget
+paths:
+  ecs:
+    - path: service/scanner
+      name: scanner-service
+  lambda:
+    - path: service/lambda/notify
+      name: notify-lambda
+  infrastructure:
+    - path: infra/cloudformation
+      name: infra-cloudformation
+  web:
+    - path: web/app
+      name: webapp
+    - path: web/webchat
+      name: webchat
+    - path: web/widget
+      name: widget
