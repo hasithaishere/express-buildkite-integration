@@ -1,9 +1,11 @@
 steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
+    key: "infrastructure-iac"
     plugins:
       - respond-io/iac-executor#v0.3.32:
           type: 'infrastructure'
           path: 'infra/cloudformation/'
   - label: "Tag Infrastructure Build"
+    depends_on: "infrastructure-iac"
     command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s infra/cloudformation"
