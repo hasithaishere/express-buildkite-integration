@@ -1,6 +1,4 @@
 steps:
-  - label: "tester"
-    command: ".buildkite/scripts/diff"
   - label: "Triggering pipelines"
     plugins:
       - chronotc/monorepo-diff#v2.0.4:
