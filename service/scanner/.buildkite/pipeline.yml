@@ -16,3 +16,5 @@ steps:
   - label: "Deploy"
     command: "service/scanner/.buildkite/scripts/deploy"
     depends_on: "scanner-build"
+  - label: "Tag MS-Scanner ECS Build"
+    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/scanner"

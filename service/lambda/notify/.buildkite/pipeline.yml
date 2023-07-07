@@ -7,3 +7,5 @@ steps:
           name: 'MS-Notify'
           path: 'service/lambda/notify/template.yaml'
           command: 'service/lambda/notify/.buildkite/scripts/deploy'
+  - label: "Tag MS-Notify Lambda Build"
+    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/lambda/notify"
