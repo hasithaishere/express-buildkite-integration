@@ -9,6 +9,7 @@ echo $BUILDKITE_ORGANIZATION_SLUG
 echo $BUILDKITE_PIPELINE_SLUG
 echo $BUILDKITE_COMMIT
 echo "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml"
+cat "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml"
 
 bsm --help
 
