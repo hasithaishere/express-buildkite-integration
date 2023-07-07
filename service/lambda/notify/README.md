@@ -1,3 +1,3 @@
 # Notify
 
-This project for notifying.
+This project for notifying..
