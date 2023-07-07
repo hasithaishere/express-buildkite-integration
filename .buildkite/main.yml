@@ -2,7 +2,7 @@ steps:
   - label: "Triggering pipelines"
     plugins:
       - chronotc/monorepo-diff#v2.0.4:
-          diff: ".buildkite/scripts/diff"
+          diff: "bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c \"${$BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml\" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT"
           interpolation: false
           watch:
             # ========================== Pipeline for ECS ==========================
