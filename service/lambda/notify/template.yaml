@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Notify lambda function template.
 
-  SAM Template for notify..
+  SAM Template for notify.
   
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
