@@ -41,6 +41,9 @@ steps:
                 label: ":art: Web - Widget"
   - wait
 
+  - label: "Bugfixes Notify & Grooming"
+    command: ".buildkite/scripts/bugfixes-notify-and-grooming"
+
   # Tagging build last commit for diffing purpose
   - label: "Tag Build"
     if:  build.branch == 'master'
