@@ -28,7 +28,7 @@ jobs:
       - name: Get PR Description
         id: pr_description
         run: |
-          description=$(jq -r '.pull_request.body' $GITHUB_EVENT_PATH)
+          description=$(gh pr list --search "is:merged filename:CHANGELOG.md" --json "title,body" | jq -r '.[0].body')
           echo "::set-output name=description::$description"
       
       - name: Create Tag and Push
