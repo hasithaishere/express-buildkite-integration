@@ -5,6 +5,25 @@
 
 ### Bug Fixes
 
+* Update code 4 ([d1515d0](https://github.com/hasithaishere/express-buildkite-integration/commit/d1515d0af81662996d7c97fd1f8c96abacd62725))
+* Update code 3 ([befd06f](https://github.com/hasithaishere/express-buildkite-integration/commit/befd06f6b97af9a78bafaefff8c96ac97e5ccd0e))
+* Chnage branch ([8f2d53b](https://github.com/hasithaishere/express-buildkite-integration/commit/8f2d53b3f84c814ce679ffa079757876155185f8))
+* Update code 2 ([8ae62e1](https://github.com/hasithaishere/express-buildkite-integration/commit/8ae62e1f914d72f5c8cf9f2a33f3305ce6cc40a0))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
+## [v1.29.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.28.0...v1.29.0) (2023-07-17)
+
+
+### Bug Fixes
+
 * Update code 3 ([befd06f](https://github.com/hasithaishere/express-buildkite-integration/commit/befd06f6b97af9a78bafaefff8c96ac97e5ccd0e))
 * Chnage branch ([8f2d53b](https://github.com/hasithaishere/express-buildkite-integration/commit/8f2d53b3f84c814ce679ffa079757876155185f8))
 * Update code 2 ([8ae62e1](https://github.com/hasithaishere/express-buildkite-integration/commit/8ae62e1f914d72f5c8cf9f2a33f3305ce6cc40a0))
@@ -1264,6 +1283,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
