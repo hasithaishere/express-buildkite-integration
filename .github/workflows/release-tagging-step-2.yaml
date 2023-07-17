@@ -25,6 +25,16 @@ jobs:
         id: package_version
         run: echo "::set-output name=version::$(jq -r '.version' package.json)"
 
+      - name: Get Newly Added Changes
+        id: new_changes
+        run: |
+          new_changes=$(git diff --diff-filter=A origin/master -- CHANGELOG.md)
+          echo "::set-output name=new_changes::$new_changes"
+
+      - name: Display Newly Added Changes
+        run: |
+          echo "Newly Added Changes: ${{ steps.new_changes.outputs.new_changes }}"
+
       - name: Get PR Description
         id: pr_description
         run: |
