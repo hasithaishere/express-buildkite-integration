@@ -5,6 +5,24 @@
 
 ### Bug Fixes
 
+* Update code ([e52c09e](https://github.com/hasithaishere/express-buildkite-integration/commit/e52c09ecbd381219cf5f253476e730984287b608))
+* Update workflows ([0c65d20](https://github.com/hasithaishere/express-buildkite-integration/commit/0c65d20ed11e397815c1371b6226c1522eb94d36))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-1.yaml` | Other |
+| `Notify-lambda` | Lambda |
+
+
+            
+            
+## [v1.33.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.32.0...v1.33.0) (2023-07-18)
+
+
+### Bug Fixes
+
 * Update workflows ([0c65d20](https://github.com/hasithaishere/express-buildkite-integration/commit/0c65d20ed11e397815c1371b6226c1522eb94d36))
 
 
@@ -1364,6 +1382,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
