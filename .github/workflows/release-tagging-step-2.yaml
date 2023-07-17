@@ -28,7 +28,7 @@ jobs:
       - name: Get CHANGELOG.md Changes
         id: changelog_changes
         run: |
-          changelog_changes=$(git diff --name-only origin/main HEAD -- CHANGELOG.md)
+          changelog_changes=$(git diff --name-only origin/master HEAD -- CHANGELOG.md)
           echo "::set-output name=changelog_changes::$changelog_changes"
 
       - name: Display CHANGELOG.md Changes
