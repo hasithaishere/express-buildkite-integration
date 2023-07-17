@@ -28,7 +28,8 @@ jobs:
       - name: Get PR Description
         id: pr_description
         run: |
-          description=$(gh pr list --search "is:merged filename:CHANGELOG.md" --json "title,body" | jq -r '.[0].body')
+          pr_number="${{ github.event.pull_request.number }}"
+          description=$(gh pr view $pr_number --json body -q '.body')
           echo "::set-output name=description::$description"
       
       - name: Create Tag and Push
