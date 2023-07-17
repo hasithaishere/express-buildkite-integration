@@ -10,6 +10,54 @@
 
 ### Bug Fixes
 
+* Add github token ([778d02f](https://github.com/hasithaishere/express-buildkite-integration/commit/778d02ffacd28f59bd5011d62e4a15435520bd6d))
+* Typo error in stage 2 workflow ([0f15770](https://github.com/hasithaishere/express-buildkite-integration/commit/0f157709116c14e24952d208fcfc11377425fff4))
+* Update github-action workflows ([b72c908](https://github.com/hasithaishere/express-buildkite-integration/commit/b72c90857e3043e310649ebf800975fbdc026ebc))
+* Bash variable test ([54fcb8f](https://github.com/hasithaishere/express-buildkite-integration/commit/54fcb8fd0780b63ad3e9f85854c8d79b9a99e1e9))
+* Update readme ([30a6f3d](https://github.com/hasithaishere/express-buildkite-integration/commit/30a6f3ded298c6cb4abe55aba73a77e334c23753))
+* Fix typo error ([9e3f818](https://github.com/hasithaishere/express-buildkite-integration/commit/9e3f81850327f6270939be1dd5cab8965cfe026e))
+* Update code ([35307b5](https://github.com/hasithaishere/express-buildkite-integration/commit/35307b5e28346fe6a0ee4ba855efb6de18521094))
+* 3 test 2 ([157e651](https://github.com/hasithaishere/express-buildkite-integration/commit/157e651c8fe07b0ee66ec9624215c364522c35b2))
+* 3 test ([cc1636d](https://github.com/hasithaishere/express-buildkite-integration/commit/cc1636d28499a8f6db74ba8c3338a2c737d37dd9))
+* Update code ([be75e1f](https://github.com/hasithaishere/express-buildkite-integration/commit/be75e1f02b904458ed633ff152269503ba2cfc20))
+* Update in service ([e783a66](https://github.com/hasithaishere/express-buildkite-integration/commit/e783a660bf9f1c985861b63dafaeceeb43fe72b4))
+* Update tagging ([40af3f6](https://github.com/hasithaishere/express-buildkite-integration/commit/40af3f693ad945ac4899b9ddd462d061640d8b43))
+* Update code ([a4b771c](https://github.com/hasithaishere/express-buildkite-integration/commit/a4b771c9749f0c006b0f3c93f4d520b82f66accc))
+* Add debug code ([4b3652c](https://github.com/hasithaishere/express-buildkite-integration/commit/4b3652cf468b1469c105e9d72490f4affcaa0502))
+* Update code ([2423ef2](https://github.com/hasithaishere/express-buildkite-integration/commit/2423ef21cf775b67d807b611593ee0f0888358ea))
+* Update code ([3a18bc4](https://github.com/hasithaishere/express-buildkite-integration/commit/3a18bc48b411753ca6e8607406aab0966315c7e1))
+* Add debug step ([daafa70](https://github.com/hasithaishere/express-buildkite-integration/commit/daafa706aebf78b44ab6a46ce82fd8ffcf4ce9ca))
+* Add help debug ([30686b7](https://github.com/hasithaishere/express-buildkite-integration/commit/30686b7e9d673c70864cff2894f64995161a943e))
+* Add debug logs ([b645bad](https://github.com/hasithaishere/express-buildkite-integration/commit/b645bad8caeabe183dce73166954e3c9bde3cd92))
+* Test ([d9cf35e](https://github.com/hasithaishere/express-buildkite-integration/commit/d9cf35e534ecc4f8dfddde85d532a2456c70783c))
+* Integrate bsm plugin ([245a48b](https://github.com/hasithaishere/express-buildkite-integration/commit/245a48bcabb6ed0ec520e79d9b381c6dbcc596a2))
+
+### Other Commits
+
+* Update template.yaml ([0eeb41a](https://github.com/hasithaishere/express-buildkite-integration/commit/0eeb41a77398f8a81fe128b58205282f6b63f4be))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.buildkite/main.yml` | Other |
+| `Infra-cloudformation` | Infrastructure |
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+| `Webchat` | Lambda |
+
+
+            
+            
+## [v1.20.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.19.1...v1.20.0) (2023-07-17)
+
+### Features
+
+* Add comments ([004a0cd](https://github.com/hasithaishere/express-buildkite-integration/commit/004a0cd65d7b2dc073d3844cc02d2e0d786752eb))
+* Add comments ([daa1884](https://github.com/hasithaishere/express-buildkite-integration/commit/daa188479124d5a8275e6545695b081c9547f661))
+* Update pr-metadata.yaml ([7d741f2](https://github.com/hasithaishere/express-buildkite-integration/commit/7d741f29f150501688d00fcfc6298be4d0616710))
+
+### Bug Fixes
+
 * Typo error in stage 2 workflow ([0f15770](https://github.com/hasithaishere/express-buildkite-integration/commit/0f157709116c14e24952d208fcfc11377425fff4))
 * Update github-action workflows ([b72c908](https://github.com/hasithaishere/express-buildkite-integration/commit/b72c90857e3043e310649ebf800975fbdc026ebc))
 * Bash variable test ([54fcb8f](https://github.com/hasithaishere/express-buildkite-integration/commit/54fcb8fd0780b63ad3e9f85854c8d79b9a99e1e9))
@@ -1001,6 +1049,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
