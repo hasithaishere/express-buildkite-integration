@@ -28,10 +28,10 @@ jobs:
       - name: Get PR Description
         id: pr_description
         run: |
-          pull_request_number="${{ github.event.pull_request.number }}"
+          pr_number="${{ github.event.pull_request.number }}"
           description=$(curl -sH "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/issues/${pull_request_number}/comments" | \
-            jq -r 'map(select(.user.login == "github-actions[bot]"))')
+            "https://api.github.com/repos/${{ github.repository }}/pulls/$pr_number" | \
+            jq -r '.body')
           echo "::set-output name=description::$description"
       
       - name: Create Tag and Push
