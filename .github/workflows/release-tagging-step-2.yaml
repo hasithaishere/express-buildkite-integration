@@ -27,7 +27,12 @@ jobs:
 
       - name: Get PR Description
         id: pr_description
-        run: echo "::set-output name=description::$(gh pr view ${{ github.event.pull_request.number }} --json body -q '.body')"
+        run: |
+          pr_number="${{ github.event.pull_request.number }}"
+          description=$(curl -sH "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/$pr_number" | \
+            jq -r '.body')
+          echo "::set-output name=description::$description"
       
       - name: Create Tag and Push
         run: |
