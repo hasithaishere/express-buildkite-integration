@@ -1,5 +1,21 @@
 
             
+## [v1.24.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.23.0...v1.24.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* Fix stage 2 release creation issue ([bb15efc](https://github.com/hasithaishere/express-buildkite-integration/commit/bb15efcdcf209be895b806bd73e4e4081e733931))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
 ## [v1.23.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.22.0...v1.23.0) (2023-07-17)
 
 
@@ -1114,6 +1130,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
