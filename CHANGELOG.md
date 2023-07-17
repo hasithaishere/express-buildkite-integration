@@ -1,5 +1,21 @@
 
             
+## [v1.28.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.27.0...v1.28.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* Get new chnages only ([539c0e4](https://github.com/hasithaishere/express-buildkite-integration/commit/539c0e46cde6b0aca6cdeccd0fdef4dec8610ecb))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
 ## [v1.27.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.26.0...v1.27.0) (2023-07-17)
 
 
@@ -1197,6 +1213,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
