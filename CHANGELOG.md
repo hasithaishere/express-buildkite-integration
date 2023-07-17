@@ -5,6 +5,23 @@
 
 ### Bug Fixes
 
+* Fix user info issue ([74673d9](https://github.com/hasithaishere/express-buildkite-integration/commit/74673d95391753284a1506434784d4d3249360da))
+* Update workflow ([511783c](https://github.com/hasithaishere/express-buildkite-integration/commit/511783c0e43b59dc262b6a5257f1957fb77dc669))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
+## [v1.21.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.20.0...v1.21.0) (2023-07-17)
+
+
+### Bug Fixes
+
 * Update workflow ([511783c](https://github.com/hasithaishere/express-buildkite-integration/commit/511783c0e43b59dc262b6a5257f1957fb77dc669))
 
 
@@ -1065,6 +1082,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
