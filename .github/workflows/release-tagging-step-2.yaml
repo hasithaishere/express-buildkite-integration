@@ -28,8 +28,7 @@ jobs:
       - name: Get PR Description
         id: pr_description
         run: |
-          pr_number="${{ github.event.pull_request.number }}"
-          description="${{ github.event.pull_request.body }}"
+          description=$(jq -r '.pull_request.body' $GITHUB_EVENT_PATH)
           echo "::set-output name=description::$description"
       
       - name: Create Tag and Push
