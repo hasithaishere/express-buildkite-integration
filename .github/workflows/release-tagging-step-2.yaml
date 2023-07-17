@@ -38,5 +38,6 @@ jobs:
       - name: Create Release
         run: |
           version="${{ steps.package_version.outputs.version }}"
+          tag_name="v${version}"
           description="${{ steps.pr_description.outputs.description }}"
-          gh release create "$tag_name" -t "v$tag_name" -n "$description"
+          gh release create "$tag_name" -t "$tag_name" -n "$description"
