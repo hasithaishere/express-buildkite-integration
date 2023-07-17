@@ -39,4 +39,4 @@ jobs:
         run: |
           version="${{ steps.package_version.outputs.version }}"
           description="${{ steps.pr_description.outputs.description }}"
-          gh release create -t "$tag_name" -n "$description"
+          gh release create "$tag_name" -t "v$tag_name" -n "$description"
