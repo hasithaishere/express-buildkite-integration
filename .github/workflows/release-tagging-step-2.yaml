@@ -23,16 +23,15 @@ jobs:
       - name: Get PR Description
         id: pr_description
         run: echo "::set-output name=description::$(gh pr view ${{ github.event.pull_request.number }} --json body -q '.body')"
-
-      - name: Create Tag
-        id: create_tag
+      
+      - name: Create Tag and Push
         run: |
           version="${{ steps.package_version.outputs.version }}"
           tag_name="v${version}"
-          gh release create "$tag_name" --notes ""
+          git tag -a "$tag_name" -m "Version $version" && git push origin "$tag_name"
 
       - name: Create Release
         run: |
           version="${{ steps.package_version.outputs.version }}"
           description="${{ steps.pr_description.outputs.description }}"
-          gh release edit "v${version}" --notes "$description"
+          gh release create "$tag_name" -t "$description" -n ""
