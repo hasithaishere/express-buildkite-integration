@@ -1,4 +1,4 @@
-name: Tag and Release
+name: Stage 1 - Create Release PR
 
 on:
   pull_request:
