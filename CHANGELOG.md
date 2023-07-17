@@ -5,6 +5,25 @@
 
 ### Bug Fixes
 
+* Update workflow ([be5922a](https://github.com/hasithaishere/express-buildkite-integration/commit/be5922abde9e8f79d09be1721b43b793e5ceba07))
+* Fix update code ([ab9b1ad](https://github.com/hasithaishere/express-buildkite-integration/commit/ab9b1ad867d644dea151a45f5ea78d4a504c3742))
+* Update pipeline ([66f896b](https://github.com/hasithaishere/express-buildkite-integration/commit/66f896b4505011b5c7a9537a341e18c2e49b73e4))
+* Update workflow ([169d6de](https://github.com/hasithaishere/express-buildkite-integration/commit/169d6de88c429dae68625de42d3f8a987c068144))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
+## [v1.25.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.24.0...v1.25.0) (2023-07-17)
+
+
+### Bug Fixes
+
 * Update workflow ([169d6de](https://github.com/hasithaishere/express-buildkite-integration/commit/169d6de88c429dae68625de42d3f8a987c068144))
 
 
@@ -1146,6 +1165,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
