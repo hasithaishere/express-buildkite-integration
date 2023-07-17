@@ -1,5 +1,21 @@
 
             
+## [v1.31.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.30.0...v1.31.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* Last update with gh cli ([95c27eb](https://github.com/hasithaishere/express-buildkite-integration/commit/95c27ebbbb6e40cea0690896b76bc38c511f1c96))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.github/workflows/release-tagging-step-2.yaml` | Other |
+
+
+            
+            
 ## [v1.30.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.29.0...v1.30.0) (2023-07-17)
 
 
@@ -1316,6 +1332,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
