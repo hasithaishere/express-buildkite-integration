@@ -13,7 +13,7 @@ jobs:
     name: Tag and Release
     steps:
       - name: Release
-        uses: respond-io/release-management-action@v1.1.1
+        uses: respond-io/release-management-action@flight/implement-pr-process
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config-path: .github/config/release-management.yaml
