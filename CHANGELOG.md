@@ -1,5 +1,22 @@
 
             
+## [v1.34.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.33.0...v1.34.0) (2023-07-18)
+
+
+### Bug Fixes
+
+* Update code ([6a88f1d](https://github.com/hasithaishere/express-buildkite-integration/commit/6a88f1d035bc0d462e843aaeacfba016315fe43c))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Infra-cloudformation` | Infrastructure |
+| `Scanner-service` | ECS |
+
+
+            
+            
 ## [v1.33.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.32.0...v1.33.0) (2023-07-18)
 
 
@@ -1382,6 +1399,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
