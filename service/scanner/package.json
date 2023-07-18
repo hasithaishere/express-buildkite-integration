@@ -1,5 +1,5 @@
 {
-  "name": "scanner",
+  "name": "scanner-ecs",
   "version": "1.20.0",
   "description": "",
   "main": "app.js",
