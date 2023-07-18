@@ -1,3 +1,3 @@
 exports.lambdaHandler = async (event) => {
-    console.log('send-message Log.');
+    console.log('send-message Log..');
 }
