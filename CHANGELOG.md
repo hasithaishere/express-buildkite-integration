@@ -1,5 +1,22 @@
 
             
+## [v1.38.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.38.0...v1.38.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* Update comments 123 ([63895f3](https://github.com/hasithaishere/express-buildkite-integration/commit/63895f31248a82857650a0c89bc560088b0ac4ab))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+<!--- EOR(End Of Release : [v1.38.1]) -->
+
+            
+            
 ## [v1.38.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.37.0...v1.38.0) (2023-07-18)
 
 
@@ -1469,6 +1486,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
