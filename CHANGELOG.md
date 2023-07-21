@@ -1,5 +1,22 @@
 
             
+## [v1.39.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.38.1...v1.39.0) (2023-07-21)
+
+### Features
+
+* Comment cleanup ([390c0a5](https://github.com/hasithaishere/express-buildkite-integration/commit/390c0a5871de213ac894f7b54ab706614bfacaca))
+
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+<!--- EOR(End Of Release : [v1.39.0]) -->
+
+            
+            
 ## [v1.38.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.38.0...v1.38.1) (2023-07-21)
 
 
@@ -1486,6 +1503,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
