@@ -1,5 +1,23 @@
 
             
+## [v1.40.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.39.0...v1.40.0) (2023-07-21)
+
+### Features
+
+* Remove unused comments ([c0e32ff](https://github.com/hasithaishere/express-buildkite-integration/commit/c0e32ffbcbc0b7692572174294d9cda92ba9e7ba))
+
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Infra-cloudformation` | Infrastructure |
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+<!--- EOR(End Of Release : [v1.40.0]) -->
+
+            
+            
 ## [v1.39.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.38.1...v1.39.0) (2023-07-21)
 
 ### Features
@@ -1503,6 +1521,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
