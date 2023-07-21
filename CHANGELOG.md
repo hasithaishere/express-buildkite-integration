@@ -1,5 +1,21 @@
 
             
+## [v1.40.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.40.0...v1.40.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* Add comment ([34cd335](https://github.com/hasithaishere/express-buildkite-integration/commit/34cd335255e2def6d12d9159e5885d06559284cd))
+
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `Notify-lambda` | Lambda |
+<!--- EOR(End Of Release : [v1.40.1]) -->
+
+            
+            
 ## [v1.40.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.39.0...v1.40.0) (2023-07-21)
 
 ### Features
@@ -1521,6 +1537,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
