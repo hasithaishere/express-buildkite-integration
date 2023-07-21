@@ -1,3 +1,4 @@
 exports.lambdaHandler = async (event) => {
-    console.log('send-message Log.');
+    // Add fix message
+    console.log('send-message Log...');
 }
