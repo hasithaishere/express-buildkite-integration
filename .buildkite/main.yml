@@ -11,12 +11,22 @@ steps:
               config:
                 command: "buildkite-agent pipeline upload service/scanner/.buildkite/pipeline.yml"
                 label: ":amazon-ecs: Scanner API"
+            - path:
+                - "service/workspace/"
+              config:
+                command: "buildkite-agent pipeline upload service/workspace/.buildkite/pipeline.yml"
+                label: ":amazon-ecs: Workspace"
             # ========================== Pipeline for Lambdas ==========================
             - path:
                 - "service/lambda/notify/"
               config:
                 command: "buildkite-agent pipeline upload service/lambda/notify/.buildkite/pipeline.yml"
                 label: ":aws-lambda: Lambda - Notify"
+            - path:
+                - "service/lambda/ssm-notification/"
+              config:
+                command: "buildkite-agent pipeline upload service/lambda/ssm-notification/.buildkite/pipeline.yml"
+                label: ":aws-lambda: Lambda - SSM-notification"
             # ========================== Pipeline for Infrastructure ==========================
             - path:
                 - "infra/cloudformation/"

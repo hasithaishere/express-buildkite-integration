@@ -1,0 +1,94 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Notify lambda function template.
+
+  SAM Template for notify.
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+    MemorySize: 128
+    Layers:
+      - !Ref AppLayer
+      - !Ref MySQLLayer
+
+Metadata:
+  Name: "MS-Notify-Lambda"
+  StagingStackName: "staging--ms-notification-ssm-test-lambda"
+  ProductionStackName: "production--ms-notification-ssm-test-lambda"
+    
+Parameters:
+  Environment:
+    Type: String
+    Default: local
+    AllowedValues:
+      - "local"
+      - "staging"
+      - "production"
+
+Resources:
+  AppLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${Environment}--test-appLayer"
+      Description: Layer to store shared code and env variables
+      ContentUri: layers/app
+      CompatibleRuntimes:
+        - nodejs16.x
+      LicenseInfo: 'MIT'
+      RetentionPolicy: Retain
+  MySQLLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${Environment}--test-mysqlLayer"
+      Description: Layer for mysql
+      ContentUri: layers/mysql
+      CompatibleRuntimes:
+        - nodejs16.x
+      LicenseInfo: 'MIT'
+      RetentionPolicy: Retain
+
+  WithMiddyFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: !Sub "${Environment}--with-middy-api-fn"
+      CodeUri: functions/with-middy/
+      Handler: app.lambdaHandler
+      Runtime: nodejs16.x
+      Architectures:
+        - x86_64
+      Events:
+        WithMiddyApiEvent:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /with-middy
+            Method: get
+      Policies:
+        # IAM policy granting permission to access all SSM Parameters under /my/ssm/*
+        - SSMParameterReadPolicy:
+            ParameterName: service/workspace-test/*
+  WithDirectSSMFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: !Sub "${Environment}--with-direct-ssm-api-fn"
+      CodeUri: functions/with-direct-ssm/
+      Handler: app.lambdaHandler
+      Runtime: nodejs16.x
+      Architectures:
+        - x86_64
+      Events:
+        WithDirectSSMApiEvent:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /with-direct-ssm
+            Method: get
+
+Outputs:
+  WithMiddyFunction:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt WithMiddyFunction.Arn
+  WithDirectSSMFunction:
+    Description: "Implicit IAM Role created for Hello World function"
+    Value: !GetAtt WithDirectSSMFunction.Arn

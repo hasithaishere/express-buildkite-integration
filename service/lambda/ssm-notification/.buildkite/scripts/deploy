@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Deploying the Lambda using SAM
+#  The samconfig.toml should be configured with confirm_changset = false
+
+echo "--- Deploying using SAM ..."
+
+cd service/lambda/ssm-notification
+
+./npm-install.sh
+
+sam deploy --no-fail-on-empty-changeset

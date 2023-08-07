@@ -5,7 +5,7 @@ steps:
     command: "ls"
     key: "ms-scanner-iac"
     plugins:
-      - respond-io/iac-executor#v0.3.32:
+      - respond-io/iac-executor#v0.3.33:
           type: 'ecs'
           name: 'MS-Scanner'
           path: 'service/scanner/template.yaml'

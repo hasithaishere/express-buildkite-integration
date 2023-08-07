@@ -1,0 +1,22 @@
+steps:
+  - block: ":hammer_and_wrench: Continue workspace ECS Deployment?"
+    if: build.branch == "master"
+  - label: "Initialize IaC Deployment"
+    command: "ls"
+    key: "ms-workspace-iac"
+    plugins:
+      - respond-io/iac-executor#v0.3.33:
+          type: 'ecs'
+          name: 'MS-Workspace'
+          path: 'service/workspace/template.yaml'
+  - label: "Build"
+    command: "service/workspace/.buildkite/scripts/docker-build"
+    key: "workspace-build"
+    depends_on: "ms-workspace-iac"
+  - label: "Deploy"
+    command: "service/workspace/.buildkite/scripts/deploy"
+    key: "workspace-deploy"
+    depends_on: "workspace-build"
+  - label: "Tag MS-workspace ECS Build"
+    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/scanner"
+    depends_on: "workspace-deploy"

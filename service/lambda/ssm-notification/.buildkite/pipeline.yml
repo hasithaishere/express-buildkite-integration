@@ -1,0 +1,9 @@
+steps:
+  - label: "Initialize IaC Deployment"
+    command: "ls"
+    plugins:
+      - respond-io/iac-executor#v0.3.33:
+          type: 'lambda'
+          name: 'MS-SSM-Notification'
+          path: 'service/lambda/ssm-notification/template.yaml'
+          command: 'service/lambda/ssm-notification/.buildkite/scripts/deploy'

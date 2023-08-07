@@ -1,0 +1,6 @@
+env_vars:
+  base_key_path: /service/workspace-test
+  secrets:
+  - DB_HOST
+  - DB_PASSWORD
+  - APM_API_KEY
