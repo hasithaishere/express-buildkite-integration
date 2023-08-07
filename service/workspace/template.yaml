@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for Scanner Log handling.."
+Description: "Infrastructure for workspace service handling.."
 
 Metadata:
-  Name: "MS-Scanner"
-  StagingStackName: "staging--ms-scanner"
-  ProductionStackName: "production--ms-scanner"
+  Name: "MS-Workspace"
+  StagingStackName: "staging--ms-workspace"
+  ProductionStackName: "production--ms-workspace"
 
 Parameters:
   Environment:
@@ -22,10 +22,10 @@ Parameters:
     Type: String
 
 Resources:
-  ScannerServiceRole:
+  WorkspaceServiceRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: !Sub "${Environment}--scanner-service-role"
+      RoleName: !Sub "${Environment}--workspace-service-role"
       AssumeRolePolicyDocument:
         Statement:
           - Action:
@@ -38,13 +38,13 @@ Resources:
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
         - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
-        - !Ref ScannerServiceManagedPolicy
+        - !Ref WorkspaceServiceManagedPolicy
 
-  ScannerServiceManagedPolicy:
+  WorkspaceServiceManagedPolicy:
     Type: AWS::IAM::ManagedPolicy
     Properties:
       Description: "Rescan Initializer Policy"
-      ManagedPolicyName: !Sub "${Environment}--scanner-service-policy"
+      ManagedPolicyName: !Sub "${Environment}--workspace-service-policy"
       Path: /
       PolicyDocument:
         Version: "2012-10-17"
