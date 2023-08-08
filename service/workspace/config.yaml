@@ -4,3 +4,4 @@ env_vars:
   - DB_HOST
   - DB_PASSWORD
   - APM_API_KEY
+  - API_VERSION
