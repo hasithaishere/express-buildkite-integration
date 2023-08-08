@@ -18,5 +18,5 @@ steps:
     key: "workspace-deploy"
     depends_on: "workspace-build"
   - label: "Tag MS-workspace ECS Build"
-    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/scanner"
+    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/workspace"
     depends_on: "workspace-deploy"

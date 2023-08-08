@@ -1,9 +1,13 @@
 steps:
   - label: "Initialize IaC Deployment"
     command: "ls"
+    key: "ms-ssm-notification-iac"
     plugins:
       - respond-io/iac-executor#v0.3.33:
           type: 'lambda'
           name: 'MS-SSM-Notification'
           path: 'service/lambda/ssm-notification/template.yaml'
           command: 'service/lambda/ssm-notification/.buildkite/scripts/deploy'
+  - label: "Tag MS-SSM-Notification Lambda Build"
+    depends_on: "ms-ssm-notification-iac"
+    command: "bsm set -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -s service/lambda/ssm-notification"
