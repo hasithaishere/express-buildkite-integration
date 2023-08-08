@@ -6,3 +6,4 @@ env_vars:
   - APM_API_KEY
   - API_VERSION
   - BASE_URL
+  - TOKEN_SUFFIX_CODE
