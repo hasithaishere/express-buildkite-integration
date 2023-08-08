@@ -15,7 +15,7 @@ Globals:
       - !Ref MySQLLayer
 
 Metadata:
-  Name: "MS-Notify-Lambda"
+  Name: "MS-Notification-SSM-Lambda"
   StagingStackName: "staging--ms-notification-ssm-test-lambda"
   ProductionStackName: "production--ms-notification-ssm-test-lambda"
     
