@@ -133,6 +133,7 @@ dist
 
 !service/lambda/notify/layers/app/nodejs/*
 !service/lambda/notify/layers/mysql/nodejs/*
-
+!service/lambda/ssm-notification/layers/app/nodejs/*
+!service/lambda/ssm-notification/layers/mysql/nodejs/*
 .aws-sam
 samconfig.toml*
