@@ -15,7 +15,7 @@ Globals:
       - !Ref MySQLLayer
     Environment:
       Variables:
-        BASE_ENV_KEY_PATH: /service/lambda/ssm-notification
+        BASE_ENV_KEY_PATH: /service/lambda/ssm-notification/
 
 Metadata:
   Name: "MS-Notification-SSM-Lambda"
