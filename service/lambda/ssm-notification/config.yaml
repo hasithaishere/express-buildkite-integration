@@ -7,3 +7,4 @@ env_vars:
   - BASE_URL_PREFIX
   - TOKEN_SUFFIX
   - DB_PORT
+  - DB_READER_PORT
