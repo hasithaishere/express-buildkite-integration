@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: "Infrastructure for Scanner Log handling.."
+Description: "Infrastructure for Scanner Log handling."
 
 Metadata:
   Name: "MS-Scanner"
