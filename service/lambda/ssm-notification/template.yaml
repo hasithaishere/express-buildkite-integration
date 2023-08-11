@@ -82,7 +82,6 @@ Resources:
             Principal:
               Service:
                 - lambda.amazonaws.com
-                - scheduler.amazonaws.com
         Version: 2012-10-17
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
@@ -103,7 +102,7 @@ Resources:
               - ssm:GetParameter
               - ssm:GetParametersByPath
             Resource:
-             - !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/service/workspace-test/"
+             - !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/service/workspace-test/*"
 
   WithDirectSSMFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
