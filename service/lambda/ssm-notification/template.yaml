@@ -98,9 +98,7 @@ Resources:
         Statement:
           - Effect: Allow
             Action:
-              - ssm:GetParameters
-              - ssm:GetParameter
-              - ssm:GetParametersByPath
+              - ssm:GetParameter*
             Resource:
              - !Sub "arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/service/lambda/ssm-notification/*"
 
