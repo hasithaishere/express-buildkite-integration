@@ -18,9 +18,9 @@ Parameters:
       - "local"
       - "staging"
       - "production"
-  ENV_SQS_QUEUE_BASE_URL:
+  SQSQueueBaseUrl:
     Type: String
-    Description: "[ECS] SQS Base Url"
+    Description: "ENV(ECS) - SQS Base Url"
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
@@ -32,7 +32,7 @@ Globals:
       - !Ref MySQLLayer
     Environment:
       Variables:
-        ENV_SQS_QUEUE_BASE_URL: !Ref ENV_SQS_QUEUE_BASE_URL
+        ENV_SQS_QUEUE_BASE_URL: !Ref SQSQueueBaseUrl
 
 Resources:
   AppLayer:
