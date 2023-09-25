@@ -5,7 +5,7 @@ let response;
 
 const handler = async (event, context) => {
     try {
-        const ssmParameterValue = event.ssmParameter;
+        console.log(JSON.stringify(process.env));
         // const ret = await axios(url);
         response = {
             'statusCode': 200,
