@@ -4,18 +4,6 @@ Description: >
   Notify lambda function template..
 
   SAM Template for notify.
-  
-# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
-Globals:
-  Function:
-    Timeout: 3
-    MemorySize: 128
-    Layers:
-      - !Ref AppLayer
-      - !Ref MySQLLayer
-    Environment:
-      Variables:
-        BASE_ENV_KEY_PATH: /service/lambda/ssm-notification/
 
 Metadata:
   Name: "MS-Notification-SSM-Lambda"
@@ -30,6 +18,21 @@ Parameters:
       - "local"
       - "staging"
       - "production"
+  ENV_SQS_QUEUE_BASE_URL:
+    Type: String
+    Description: "[ECS] SQS Base Url"
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+    MemorySize: 128
+    Layers:
+      - !Ref AppLayer
+      - !Ref MySQLLayer
+    Environment:
+      Variables:
+        ENV_SQS_QUEUE_BASE_URL: !Ref ENV_SQS_QUEUE_BASE_URL
 
 Resources:
   AppLayer:
