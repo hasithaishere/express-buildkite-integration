@@ -27,4 +27,4 @@ const handler = async (event, context) => {
     return response
 };
 
-exports.lambdaHandler = appLayerLib.lambdaWrapper(handler);
+exports.lambdaHandler = handler;
