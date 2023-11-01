@@ -5,7 +5,7 @@ steps:
     command: "ls"
     key: "ms-workspace-iac"
     plugins:
-      - respond-io/iac-executor#v0.3.33:
+      - respond-io/iac-executor#v0.4.3:
           type: 'ecs'
           name: 'MS-Workspace'
           path: 'service/workspace/template.yaml'
