@@ -3,7 +3,7 @@ steps:
     command: "ls"
     key: "ms-ssm-notification-iac"
     plugins:
-      - respond-io/iac-executor#v0.4.0-rc2:
+      - respond-io/iac-executor#v0.4.0:
           type: 'lambda'
           name: 'MS-SSM-Notification'
           path: 'service/lambda/ssm-notification/template.yaml'
