@@ -1,5 +1,98 @@
 
             
+## [v1.41.0](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.40.1...v1.41.0) (2024-01-11)
+
+### Features
+
+* Update code ([48ce1af](https://github.com/hasithaishere/express-buildkite-integration/commit/48ce1af7a73491f043b73b75b657f0fe9a943ee0))
+
+### Bug Fixes
+
+* Update iac plugin version ([fbe6c05](https://github.com/hasithaishere/express-buildkite-integration/commit/fbe6c0524d41d7c211088a7b110d9b5c7266f22a))
+* Update iac plugin version ([b288961](https://github.com/hasithaishere/express-buildkite-integration/commit/b2889612011fabb058df5fb65300af14de691b7c))
+* Update config ([3db20cd](https://github.com/hasithaishere/express-buildkite-integration/commit/3db20cd95019bec71f12e25bf1bde3d9c1bc965e))
+* Update config ([e635540](https://github.com/hasithaishere/express-buildkite-integration/commit/e6355408ef74c0d7dec57dc7bbaf0100051bfb17))
+* Update config ([6cbeca8](https://github.com/hasithaishere/express-buildkite-integration/commit/6cbeca8c6ebc05007d0e1f36c8ef2fc13eba54bb))
+* Update pkg version ([f4e052c](https://github.com/hasithaishere/express-buildkite-integration/commit/f4e052c0cf51601c2e481fc6407360634aa611b8))
+* Update pkg version ([f1a5f7d](https://github.com/hasithaishere/express-buildkite-integration/commit/f1a5f7d39c5fc7267904e05d36c173ee0fe87ca3))
+* Update code ([9f17278](https://github.com/hasithaishere/express-buildkite-integration/commit/9f17278c12c1b0b30087dd052f69f0b6ed760020))
+* Update code ([469ce1a](https://github.com/hasithaishere/express-buildkite-integration/commit/469ce1aa0d0cc2526ff98384db9a6cb2c7ce41c1))
+* Update pkg version ([7543406](https://github.com/hasithaishere/express-buildkite-integration/commit/754340635b5d36d5b1279c541a0ea13f708bc808))
+* Remove middy from app package.json ([8b78c66](https://github.com/hasithaishere/express-buildkite-integration/commit/8b78c66b03bfc386a18463cb0e1deecd606fe0b5))
+* Update config pkg version ([973d292](https://github.com/hasithaishere/express-buildkite-integration/commit/973d292fb55f371af70de6390007892cad75c6f2))
+* Update code ([ed7cd91](https://github.com/hasithaishere/express-buildkite-integration/commit/ed7cd913645e2995ca2a826cdabf411c1e1225a3))
+* Update code ([f017417](https://github.com/hasithaishere/express-buildkite-integration/commit/f017417c416f4df522d3aeec9cf0734d32130d43))
+* Update code ([982a4f5](https://github.com/hasithaishere/express-buildkite-integration/commit/982a4f53033510b8892f7d48cc0612a22d8a52ad))
+* Update pkg version ([2fdae61](https://github.com/hasithaishere/express-buildkite-integration/commit/2fdae6105d7e0352a80f3274c093c4f8c2659e90))
+* Add debug logs ([7cb77bc](https://github.com/hasithaishere/express-buildkite-integration/commit/7cb77bc3cb77ca14819dd7ed3be86df0ee603d02))
+* Lambdawrapper load issue ([9ec1d02](https://github.com/hasithaishere/express-buildkite-integration/commit/9ec1d02ed4ad3a47596a1811bd3ecf66a8a926ab))
+* Update pkg version ([f24c9be](https://github.com/hasithaishere/express-buildkite-integration/commit/f24c9be1cce8ec8afea1f222fe4d3ff05d72aba8))
+* Update parameter ([f3ba5d5](https://github.com/hasithaishere/express-buildkite-integration/commit/f3ba5d51dde1d5f66fc4b066f0273d4c3e2a3df8))
+* Update config ([7028456](https://github.com/hasithaishere/express-buildkite-integration/commit/7028456688f15cd0ad584f1eeeceae6564f02ae7))
+* Remove unused code ([95a6ace](https://github.com/hasithaishere/express-buildkite-integration/commit/95a6ace8b09875e9071b02cd0d888111da220eb6))
+* Update ssm data ([d23358e](https://github.com/hasithaishere/express-buildkite-integration/commit/d23358ea517b09c871cc39624f6e8c24555f5796))
+* Update rapper for ignore local lambda wrapping ([f77e360](https://github.com/hasithaishere/express-buildkite-integration/commit/f77e360da5e87a3b268add67fcf8414b7852fef3))
+* Revert to previous changes ([e7ba38a](https://github.com/hasithaishere/express-buildkite-integration/commit/e7ba38ae4c1ec97a19453a028a6d916242a78e22))
+* Update code ([16bf88e](https://github.com/hasithaishere/express-buildkite-integration/commit/16bf88ed430de304f84b1d1873574918c2572bea))
+* Update code ([c80525e](https://github.com/hasithaishere/express-buildkite-integration/commit/c80525e1b33a82bef009a9da3800448604ac364f))
+* Update template ([f981fca](https://github.com/hasithaishere/express-buildkite-integration/commit/f981fca7c4ddb7f64e661dd3f0f9003f30d05b38))
+* Update template ([c448763](https://github.com/hasithaishere/express-buildkite-integration/commit/c44876308232d4af491b3d971d4756b52d5c49d9))
+* Update code ([d8800c1](https://github.com/hasithaishere/express-buildkite-integration/commit/d8800c1bf62dc25ec952cbafc739081f9fba0b7e))
+* Update code ([7125278](https://github.com/hasithaishere/express-buildkite-integration/commit/712527826cf4edb7da56dfae03fad51f6a5e7b52))
+* Update code ([9d4085b](https://github.com/hasithaishere/express-buildkite-integration/commit/9d4085be076068cd58d7545d3f2e59ce78b33c36))
+* Update layer ([0659525](https://github.com/hasithaishere/express-buildkite-integration/commit/0659525937449800c624ec4104de77b28eedac42))
+* Update path typo ([aa2b75f](https://github.com/hasithaishere/express-buildkite-integration/commit/aa2b75f7ac8d75cb66310688d1561c87c731ac78))
+* Update layer ([f93365e](https://github.com/hasithaishere/express-buildkite-integration/commit/f93365e847388154e842d2532887abeed034437d))
+* Update path ([9123532](https://github.com/hasithaishere/express-buildkite-integration/commit/91235328d41e47fe1048b2a830c099333f44bbf4))
+* Update layer ([0658965](https://github.com/hasithaishere/express-buildkite-integration/commit/0658965abae39e4024f4ff9569e2f5494a0406ac))
+* Update wrapper ([adc86ba](https://github.com/hasithaishere/express-buildkite-integration/commit/adc86ba767e96d21d69e71e0e88791f9d434c3dd))
+* Update app layer ([d450ce0](https://github.com/hasithaishere/express-buildkite-integration/commit/d450ce0378916afe33e8007558caec3b58f95d10))
+* Remove unused secret ([4b834ec](https://github.com/hasithaishere/express-buildkite-integration/commit/4b834ec1488894415ae7cb797e980437286746fd))
+* Update layer ([293ee4b](https://github.com/hasithaishere/express-buildkite-integration/commit/293ee4b875f2936d4469a103019a8f5fc125d24a))
+* Update code ([4268fa5](https://github.com/hasithaishere/express-buildkite-integration/commit/4268fa58eb1e78a9b30a1712b8a35023582996a1))
+* Update code ([0a1284d](https://github.com/hasithaishere/express-buildkite-integration/commit/0a1284d2e2a0965a9e79473e39d8cb44dd8b9d9f))
+* Update code ([e9d0876](https://github.com/hasithaishere/express-buildkite-integration/commit/e9d08763dff4afb1eed343a690ffcd2c5ce2b87a))
+* Update code ([a9fedd0](https://github.com/hasithaishere/express-buildkite-integration/commit/a9fedd0cdbfaa16a03798df7f298152a2c50eb5c))
+* Update code 3 ([4530500](https://github.com/hasithaishere/express-buildkite-integration/commit/45305008159ccce8b35df787ccf012b152acd6d9))
+* Update code ([8dc3cb8](https://github.com/hasithaishere/express-buildkite-integration/commit/8dc3cb8fd9f0d49d229275623a2fac9f53b165ba))
+* Update code ([69835ad](https://github.com/hasithaishere/express-buildkite-integration/commit/69835add618e84d0d51818e2745ef5f99e6c3d54))
+* Update secret.yaml files ([63d7f20](https://github.com/hasithaishere/express-buildkite-integration/commit/63d7f2076cf2119abf7cfef6f177f32584a0afa9))
+* Fix template ssm parameter issue ([115e144](https://github.com/hasithaishere/express-buildkite-integration/commit/115e14415e55b1a977d6687c4f709b80047677b0))
+* Update template for test ([fbfadf2](https://github.com/hasithaishere/express-buildkite-integration/commit/fbfadf2bbc6dbfd69fdee474ab64766a98c14596))
+* Other service and lambda test ([84aa22e](https://github.com/hasithaishere/express-buildkite-integration/commit/84aa22edf12df340bcf8a9bf73ec22d3b00bfce4))
+* Update code ([6761298](https://github.com/hasithaishere/express-buildkite-integration/commit/6761298086ac08fda1af427813012d048c9d1fce))
+* Update code ([6be99fe](https://github.com/hasithaishere/express-buildkite-integration/commit/6be99fe29651ad193b8b0faf043f55f9fc1dc75b))
+* Update env ([93d1297](https://github.com/hasithaishere/express-buildkite-integration/commit/93d12978259daa72a32991c278f2f79ca3e9a2e2))
+* Update code ([92de5dc](https://github.com/hasithaishere/express-buildkite-integration/commit/92de5dc506bde44a1beffcb72f6c43fade9b1c5a))
+* Add code ([3e65a83](https://github.com/hasithaishere/express-buildkite-integration/commit/3e65a831480ea60d32bd233281579934caae6c30))
+* Update code to add envs ([011f7f4](https://github.com/hasithaishere/express-buildkite-integration/commit/011f7f40c6be13f1819683eea3b0e2ca6aaac9a4))
+* Add missing layers ([7cd91a9](https://github.com/hasithaishere/express-buildkite-integration/commit/7cd91a9ab18c3fbec00b39b50976706fdcadd1da))
+* Fix slash issue in ssm path ([de0aad4](https://github.com/hasithaishere/express-buildkite-integration/commit/de0aad4499ed4b4e5a124fb25f382e9ce1df66a0))
+* Update config ([103764f](https://github.com/hasithaishere/express-buildkite-integration/commit/103764f900b4e70ac455efb86998c921e82cd17f))
+* Update code ([bb42fb5](https://github.com/hasithaishere/express-buildkite-integration/commit/bb42fb55d4e16fbbbe44dd7343f0cce3305cf11a))
+* Add and update cft in services ([f6ec0d0](https://github.com/hasithaishere/express-buildkite-integration/commit/f6ec0d083262707571dbcb27e188150f3ada9a7f))
+* Add ssm param load code ([a500f11](https://github.com/hasithaishere/express-buildkite-integration/commit/a500f11eee99a5be0fd9e95614ffa3aa1f9baef9))
+
+### Other Commits
+
+* update ECS ([64a3649](https://github.com/hasithaishere/express-buildkite-integration/commit/64a36497ef580e8acab0f9ba4352d7530248e89c))
+* update lambda ([c36d79a](https://github.com/hasithaishere/express-buildkite-integration/commit/c36d79acdb66300d3370f2c211a0078a6c5720f6))
+* Update pipeline.yml ([ff62c34](https://github.com/hasithaishere/express-buildkite-integration/commit/ff62c34c57590d8bdb7a2b724627476e1c2882ef))
+* Update pipeline.yml ([62df55c](https://github.com/hasithaishere/express-buildkite-integration/commit/62df55c0717bbacbfe8c545d68dda3785ca3d5a0))
+* add debug log ([1c7f846](https://github.com/hasithaishere/express-buildkite-integration/commit/1c7f846b5a03217bcf46497d5300b48c1e6bf4d0))
+* add debug logs ([b65e675](https://github.com/hasithaishere/express-buildkite-integration/commit/b65e6759d7ef0e65d386d2ab1226a63a1f8e700d))
+
+### Affected Areas
+| **Service**        | **Type**                                         |
+|--------------------|---------------------------------------------------------|
+| `.buildkite/main.yml` | Other |
+| `Infra-cloudformation` | Infrastructure |
+| `Notify-lambda` | Lambda |
+| `Scanner-service` | ECS |
+<!--- EOR(End Of Release : [v1.41.0]) -->
+
+            
+            
 ## [v1.40.1](https://github.com/hasithaishere/express-buildkite-integration/compare/v1.40.0...v1.40.1) (2023-07-21)
 
 
@@ -1537,6 +1630,7 @@ Before All the Releases :D
         
         
 
+        
         
         
         
