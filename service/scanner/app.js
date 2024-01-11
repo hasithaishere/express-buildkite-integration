@@ -1,4 +1,4 @@
-// This is the mocked ECS service. This is enhancement..
+// This is the mocked ECS service. This is enhancement...
 const http = require('http');
 
 http.createServer(function (req, res) {
