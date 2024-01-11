@@ -1,6 +1,6 @@
 {
   "name": "send-message-fn",
-  "version": "1.40.1",
+  "version": "1.41.0",
   "description": "This is send message function",
   "main": "index.js",
   "scripts": {
