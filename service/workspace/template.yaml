@@ -53,6 +53,7 @@ Resources:
             Action:
               - s3:GetBucketLocation
               - s3:GetObject
+              - s3:ListBucket
             Resource:
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}"
               - !Sub "arn:aws:s3:::${Environment}--${BucketName}/${LogPath}/*"
