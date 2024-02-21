@@ -26,21 +26,21 @@ Parameters:
       - "local"
       - "staging"
       - "production"
-  ResultBucketName:
-    Type: String
-    Default: "results-bucket"
-  SecondaryBucketName:
-    Type: String
-  DBPassword:
-    Type: String
-    MinLength: 10
-    MaxLength: 30
-    NoEcho: true
-  ESPassword:
-    Type: String
-    MinLength: 10
-    MaxLength: 30
-    NoEcho: true
+  # ResultBucketName:
+  #   Type: String
+  #   Default: "results-bucket"
+  # SecondaryBucketName:
+  #   Type: String
+  # DBPassword:
+  #   Type: String
+  #   MinLength: 10
+  #   MaxLength: 30
+  #   NoEcho: true
+  # ESPassword:
+  #   Type: String
+  #   MinLength: 10
+  #   MaxLength: 30
+  #   NoEcho: true
   APIMethod:
     Type: String
 
