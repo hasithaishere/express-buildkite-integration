@@ -1,0 +1,11 @@
+🍁 lambda:
+  - service/lambda/**
+
+🧩 service:
+  - any: ['service/**/*']
+    all: ['!service/lambda/**']
+
+🚧 infra:
+  - infra/**
+  - '**/template.yaml'
+  - '**/template.yml'
