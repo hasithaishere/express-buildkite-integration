@@ -16,19 +16,39 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
+      VersioningConfiguration:
+        Status: Enabled
+      # AccessControl: PublicRead # throws an error: Bucket cannot have public ACLs set with BlockPublicAccess enabled
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: ObjectWriter
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      Tags:
+        - Key: Name
+          Value: !Ref DomainName
+        - Key: StackName
+          Value: !Ref AWS::StackName
 
   WebsiteBucketPolicy:
     Type: 'AWS::S3::BucketPolicy'
     Properties:
       Bucket: !Ref WebsiteBucket
       PolicyDocument:
+        Version: 2012-10-17
         Statement:
-          - Sid: PublicReadGetObject
+          - Sid: PublicReadForGetBucketObjects
             Effect: Allow
             Principal: '*'
-            Action: 
-              - 's3:GetObject'
-            Resource: !Sub 'arn:aws:s3:::${WebsiteBucket}/*'
+            Action: 's3:GetObject'
+            Resource: !Join 
+              - ''
+              - - 'arn:aws:s3:::'
+                - !Ref WebsiteBucket
+                - /*
 
   CloudFrontDistribution:
     Type: 'AWS::CloudFront::Distribution'
@@ -55,7 +75,9 @@ Resources:
 Outputs:
   WebsiteURL:
     Description: "Website URL"
-    Value: !GetAtt WebsiteBucket.WebsiteURL
+    Value: !GetAtt 
+      - WebsiteBucket
+      - WebsiteURL
 
   CloudFrontDomainName:
     Description: "CloudFront Distribution Domain Name"
