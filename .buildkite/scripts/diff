@@ -2,6 +2,10 @@
 
 set -ueo pipefail
 
+whoami
+bsm --help
+bsm --version
+
 #LATEST_BUILT_TAG=$(head -n 1 ~/last_successful_production_build)
 
 #git diff --name-only $LATEST_BUILT_TAG
