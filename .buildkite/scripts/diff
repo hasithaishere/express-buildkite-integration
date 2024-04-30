@@ -16,7 +16,7 @@ get_diff() {
         # Split the variable by commas and loop over each item
         IFS=',' read -ra ADDR <<< "$FORCED_DEPLOY_SERVICES"
         for i in "${ADDR[@]}"; do
-            echo "Deploying: $i"
+            echo "$i"
             # Add deployment command here if necessary
         done
     fi
