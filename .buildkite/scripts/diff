@@ -2,11 +2,18 @@
 
 set -ueo pipefail
 
-whoami
-bsm --help
-bsm --version
-
 #LATEST_BUILT_TAG=$(head -n 1 ~/last_successful_production_build)
 
 #git diff --name-only $LATEST_BUILT_TAG
-bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
+#bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
+
+# Check if the variable is not empty
+if [ -n "$FORCED_DEPLOY_SERVICES" ]; then
+    # Split the variable by commas and loop over each item
+    IFS=',' read -ra ADDR <<< "$FORCED_DEPLOY_SERVICES"
+    for i in "${ADDR[@]}"; do
+        echo "$i"
+    done
+else
+    bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
+fi
