@@ -1,8 +1,6 @@
 steps:
   #- command: "bie init -e staging -r ap-southeast-1 -b $BUILDKITE_BUILD_NUMBER -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_NAME | buildkite-agent pipeline upload"
   #  label: "Initialize Pipeline"
-  - label: "Check Diff"
-    command: ".buildkite/scripts/diff"
   - label: "Running Main Pipeline"
     if:  build.branch == 'master'
     command: "buildkite-agent pipeline upload .buildkite/main.yml"
