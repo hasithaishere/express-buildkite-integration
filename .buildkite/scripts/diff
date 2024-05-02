@@ -8,19 +8,21 @@ set -ueo pipefail
 #bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
 
 # Function to get git difference
-get_diff() {
-    # Check if the FORCED_DEPLOY_SERVICES environment variable is set and not empty
-    if [ -z "${FORCED_DEPLOY_SERVICES+x}" ]; then
-        bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
-    else
-        # Split the variable by commas and loop over each item
-        IFS=',' read -ra ADDR <<< "$FORCED_DEPLOY_SERVICES"
-        for i in "${ADDR[@]}"; do
-            echo "$i"
-            # Add deployment command here if necessary
-        done
-    fi
-}
+#get_diff() {
+#    # Check if the FORCED_DEPLOY_SERVICES environment variable is set and not empty
+#    if [ -z "${FORCED_DEPLOY_SERVICES+x}" ]; then
+#        bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
+#    else
+#        # Split the variable by commas and loop over each item
+#        IFS=',' read -ra ADDR <<< "$FORCED_DEPLOY_SERVICES"
+#        for i in "${ADDR[@]}"; do
+#            echo "$i"
+#            # Add deployment command here if necessary
+#        done
+#    fi
+#}
 
 # Call get diff function
-get_diff
+#get_diff
+
+bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -f $FORCED_DEPLOY_SERVICES
