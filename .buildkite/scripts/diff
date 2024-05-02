@@ -25,4 +25,18 @@ set -ueo pipefail
 # Call get diff function
 #get_diff
 
-bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -f "$FORCED_DEPLOY_SERVICES"
+#bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -f "$FORCED_DEPLOY_SERVICES"
+
+
+# Function to get git difference
+get_diff() {
+    # Check if the FORCED_DEPLOY_SERVICES environment variable is set and not empty
+    if [ -z "${FORCED_DEPLOY_SERVICES+x}" ]; then
+        bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT
+    else
+        bsm diff -r $BUILDKITE_BUILD_CHECKOUT_PATH -c "${BUILDKITE_BUILD_CHECKOUT_PATH}/.buildkite/main.yml" -o $BUILDKITE_ORGANIZATION_SLUG -p $BUILDKITE_PIPELINE_SLUG -h $BUILDKITE_COMMIT -f $FORCED_DEPLOY_SERVICES
+    fi
+}
+
+# Call get diff function
+get_diff
